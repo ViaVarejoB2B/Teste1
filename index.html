@@ -268,19 +268,21 @@
   <li><strong>Antifraude</strong>: É uma plataforma de prevenção à fraude que fornece uma análise de risco detalhada das compras on-line. Este processo é totalmente transparente para o portador do cartão. De acordo com os critérios preestabelecidos, o pedido pode ser automaticamente aceito, recusado ou encaminhado para análise manual.</li>
 </ul>
 
-<div name="Criando-uma-transação" data-unique="Criando-uma-transação"></div><h1 id="Criando-uma-transação">Criando uma transação</h1>
+<div name="Disponibilização-das-informações" data-unique="Disponibilização-das-informações"></div><h1 id="Disponibilização-das-informações">Disponibilização das informações</h1>
 
-<div name="cartão-de-crédito-e-débito" data-unique="cartão-de-crédito-e-débito"></div><h2 id="cartão-de-crédito-e-débito">Cartão de Crédito e Débito</h2>
+<p>Independente da forma que o parceiro recebe as informações, a carga inicial sempre é necessária. Hoje a mensageria não possui uma funcionalidade onde todas as informações são enviadas. A carga inicial é realizada através do download de arquivos. Todos os arquivos e informações necessárias, estão detalhadas no tópico Download de arquivos.</p>
 
-<div name="criando-uma-transação" data-unique="criando-uma-transação"></div><h3 id="criando-uma-transação">Criando uma transação</h3>
+<div name="Download-de-Arquivos" data-unique="Download-de-Arquivos"></div><h2 id="Download-de-Arquivos">Download de Arquivos</h2>
 
-<p>Para autoriazar uma transação de crédito, é necessário seguir o contrato abaixo. Os dados referentes à sua afiliação são enviados no nó <code class="highlighter-rouge">Payment.Credentials</code>, e devem ser enviados sempre que uma nova requisição de autorização for submetida para aprovação.</p>
+<p>São disponibilizados 5 arquivos ZIP com as informações necessárias para o parceiro se integrar com o B2B. O processo dos XMLS dos arquivos será necessário na carga inicial, e nos casos onde os parceiros optem em não trabalhar com a integração via mensageria. O detalhamento dos campos será feito no tópico 7. Dicionário de dados</p>
 
-<p>Caso a sua loja utilize os serviços de Retentaiva ou Loadbalance, as afiliações devem ser cadastradas pela equipe de suporte ao cliente. Para requisitar o cadastro de afiliações, clique <a href="http://suporte.ViaVarejo.com.br/">Aqui</a>.</p>
+<div name="Produto-Completo" data-unique="Produto-Completo"></div><h3 id="Produto-Completo">Produto Completo</h3>
+
+<p>Arquivo que contém os produtos e skus ativos das bandeiras. Os produtos são em arquivos XML, agrupados por categoria. Ex: B2BCompleto_001.xml, B2BCompleto_013.xml, etc. </p>
 
 <aside class="notice">Os parâmetros contidos nos nós Address e DeliveryAddress são obrigatórios quando a transação é submetida ao Antifraude ou análise do Velocity. Na tabela de parâmetros abaixo, eles estão marcados com um * na coluna de obrigatoriedade.</aside>
 
-<div name="requisição" data-unique="requisição"></div><h4 id="requisição">Requisição</h4>
+<div name="Produto-Parcial" data-unique="Produto-Parcial"></div><h4 id="Produto-Parcial">Produto Parcial</h4>
 
 <aside class="request"><span class="method post">POST</span> <span class="endpoint">/v2/sales/</span></aside>
 
@@ -16035,7 +16037,325 @@ No caso de não possuir o dado para enviar, pedimos a gentileza de não enviar o
       <div></div>
     </div>
 
-    <div id="toc" class="tocify"><ul id="tocify-header0" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="introdução-ao-B2B-ViaVarejo"><a>Introdução ao B2B ViaVarejo API</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style=""><li class="tocify-item has-subitens" data-unique="ambientes"><a>Ambientes</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="ambiente-Homologação"><a>Ambiente Homologação</a></li><li class="tocify-item" data-unique="ambiente-de-produção"><a>Ambiente de Produção</a></li></ul><li class="tocify-item" data-unique="suporte-ViaVarejo"><a>Suporte ViaVarejo</a></li><li class="tocify-item" data-unique="características-da-solução"><a>Características da Solução</a></li><li class="tocify-item" data-unique="arquitetura"><a>Arquitetura</a></li></ul></ul><ul id="tocify-header1" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="criando-uma-transação"><a>Criando uma transação</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style="display: block;"><li class="tocify-item has-subitens" data-unique="cartão-de-crédito-e-débito"><a>Cartão de Crédito e Débito</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style="display: block;"><li class="tocify-item has-subitens active" data-unique="criando-uma-transação"><a>Criando uma transação</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style="display: block;"><li class="tocify-item" data-unique="requisição"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="capturando-uma-transação"><a>Capturando uma transação</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição13"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta14"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="transação-com-autenticação"><a>Transação com autenticação</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item has-subitens" data-unique="autenticação-padrão"><a>Autenticação Padrão</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição17"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta18"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="autenticação-externa"><a>Autenticação Externa</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição20"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta21"><a>Resposta</a></li></ul></ul><li class="tocify-item has-subitens" data-unique="transação-com-cartão-de-débito"><a>Transação com cartão de débito</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição23"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta24"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="cancelando/estornando-uma-transação"><a>Cancelando/Estornando uma transação</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição26"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta27"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="transação-com-velocity-check"><a>Transação com Velocity Check</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="resposta29"><a>Resposta</a></li></ul></ul><li class="tocify-item has-subitens" data-unique="boletos"><a>Boletos</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="boleto-registrado"><a>Boleto Registrado</a></li><li class="tocify-item has-subitens" data-unique="criando-uma-transação-de-boleto"><a>Criando uma transação de Boleto</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição33"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta34"><a>Resposta</a></li></ul><li class="tocify-item" data-unique="conciliação-de-boletos"><a>Conciliação de Boletos</a></li><li class="tocify-item" data-unique="tabela-de-especificação-de-quantidade-de-caracteres-do-campo-por-provider"><a>Tabela de Especificação de quantidade de caracteres do campo por Provider</a></li></ul><li class="tocify-item has-subitens" data-unique="recorrência"><a>Recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item has-subitens" data-unique="autorizar-uma-transação-recorrente"><a>Autorizar uma transação recorrente</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição39"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta40"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="agendamento-de-uma-recorrência"><a>Agendamento de uma recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição42"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta43"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-dados-do-comprador"><a>Alterar dados do comprador</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição45"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta46"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-a-data-final-da-recorrência"><a>Alterar a data final da recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição48"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta49"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-o-intervalo-da-recorrência"><a>Alterar o intervalo da recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição51"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta52"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-o-dia-da-recorrência"><a>Alterar o dia da recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição54"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta55"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-o-valor-da-transação-da-recorrência"><a>Alterar o valor da transação da recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requsição"><a>Requsição</a></li><li class="tocify-item" data-unique="resposta58"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-a-data-do-próximo-pagamento"><a>Alterar a data do próximo Pagamento</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição60"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta61"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="alterar-os-dados-de-pagamento-da-recorrência"><a>Alterar os dados de Pagamento da recorrência</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição63"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta64"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="desabilitando-um-pedido-recorrente"><a>Desabilitando um Pedido recorrente</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição66"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta67"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="reabilitando-um-pedido-recorrente"><a>Reabilitando um Pedido recorrente</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição69"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta70"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="transação-com-renova-fácil"><a>Transação com Renova Fácil</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="resposta72"><a>Resposta</a></li></ul></ul><li class="tocify-item has-subitens" data-unique="transferência-eletrônica"><a>Transferência Eletrônica</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item has-subitens" data-unique="criando-uma-transação74"><a>Criando uma transação</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição75"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta76"><a>Resposta</a></li></ul></ul><li class="tocify-item has-subitens" data-unique="e-wallets"><a>E-Wallets</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="o-que-são-e-wallets-(carteiras-digitais)"><a>O que são e-Wallets (Carteiras Digitais)</a></li><li class="tocify-item" data-unique="e-wallets-disponíveis"><a>E-Wallets Disponíveis</a></li><li class="tocify-item has-subitens" data-unique="integração"><a>Integração</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item has-subitens" data-unique="requisição-padrão"><a>Requisição Padrão</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="walletkey"><a>Walletkey</a></li><li class="tocify-item" data-unique="ephemeralpublickey"><a>EphemeralPublicKey</a></li></ul><li class="tocify-item" data-unique="respostas"><a>Respostas</a></li></ul><li class="tocify-item has-subitens" data-unique="exemplos"><a>Exemplos</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item has-subitens" data-unique="apple-pay"><a>Apple Pay</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="passo-1.-contratação-na-apple"><a>Passo 1. Contratação na Apple</a></li><li class="tocify-item" data-unique="passo-2.-obtenção-do-merchantidentifier"><a>Passo 2. Obtenção do MerchantIdentifier</a></li><li class="tocify-item" data-unique="passo-3.-upload-do-certificado-csr"><a>Passo 3. Upload do Certificado CSR</a></li><li class="tocify-item" data-unique="passo-4.-integração-com-apple-pay"><a>Passo 4. Integração com Apple Pay</a></li><li class="tocify-item" data-unique="passo-5.-integração-com-B2B ViaVarejo-(decriptografia-e-autorização)"><a>Passo 5. Integração com B2B ViaVarejo (decriptografia e autorização)</a></li><li class="tocify-item" data-unique="requisição92"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta93"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="samsung-pay"><a>Samsung Pay</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição95"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta96"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="android-pay"><a>Android Pay</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição98"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta99"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="masterpass"><a>MasterPass</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição101"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta102"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="visa-checkout"><a>Visa Checkout</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição104"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta105"><a>Resposta</a></li></ul></ul></ul><li class="tocify-item has-subitens" data-unique="voucher"><a>Voucher</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-voucher-alelo"><a>Criando uma transação com voucher Alelo</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição108"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta109"><a>Resposta</a></li></ul></ul><li class="tocify-item has-subitens" data-unique="pagamentos-com-dcc-(conversor-de-moedas-da-adquirente-global-payments)"><a>Pagamentos com DCC (conversor de moedas da adquirente Global Payments)</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item has-subitens" data-unique="processo-de-autorização-com-dcc"><a>Processo de autorização com DCC</a></li><ul class="tocify-subheader nav nav-list" data-tag="5" style=""><li class="tocify-item" data-unique="requisição112"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta113"><a>Resposta</a></li><li class="tocify-item" data-unique="requisição114"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta115"><a>Resposta</a></li></ul></ul></ul></ul><ul id="tocify-header2" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="salvando-e-reutilizando-cartões"><a>Salvando e reutilizando cartões</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style=""><li class="tocify-item has-subitens" data-unique="salvando-um-cartão-durante-uma-autorização"><a>Salvando um cartão durante uma autorização</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="requisição118"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta119"><a>Resposta</a></li><li class="tocify-item" data-unique="resposta122"><a>Resposta</a></li><li class="tocify-item" data-unique="resposta125"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-card-token"><a>Criando uma transação com Card Token</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição121"><a>Requisição</a></li></ul><li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-alias"><a>Criando uma transação com Alias</a></li><ul class="tocify-subheader nav nav-list" data-tag="4" style=""><li class="tocify-item" data-unique="requisição124"><a>Requisição</a></li></ul></ul></ul><ul id="tocify-header3" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="pagamentos-com-análise-de-fraude"><a>Pagamentos com Análise de Fraude</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style=""><li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-análise-de-fraude-cybersource"><a>Criando uma transação com Análise de Fraude Cybersource</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="requisição128"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta129"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="configuração-do-fingerprint"><a>Configuração do Fingerprint</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="cybersource"><a>Cybersource</a></li><li class="tocify-item" data-unique="integração-em-aplicativos-mobile"><a>Integração em aplicativos mobile</a></li></ul></ul></ul><ul id="tocify-header4" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="pagamentos-com-split-de-pagamento"><a>Pagamentos com Split de Pagamento</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style=""><li class="tocify-item" data-unique="requisição134"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta135"><a>Resposta</a></li></ul></ul><ul id="tocify-header5" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="consultas"><a>Consultas</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style=""><li class="tocify-item has-subitens" data-unique="consultando-uma-transação-via-paymentid"><a>Consultando uma transação via PaymentID</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="requisição138"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta139"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="consultando-uma-transação-de-boleto-via-paymentid"><a>Consultando uma transação de Boleto via PaymentID</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="requisição141"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta142"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="consultando-uma-venda-pelo-identificador-da-loja"><a>Consultando uma venda pelo identificador da loja</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="requisição144"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta145"><a>Resposta</a></li></ul><li class="tocify-item has-subitens" data-unique="consultando-um-pedido-recorrente"><a>Consultando um pedido Recorrente</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="requisição147"><a>Requisição</a></li><li class="tocify-item" data-unique="resposta148"><a>Resposta</a></li></ul></ul></ul><ul id="tocify-header6" class="tocify-header nav nav-list"><li class="tocify-item" data-unique="post-de-notificação"><a>Post de Notificação</a></li></ul><ul id="tocify-header7" class="tocify-header nav nav-list"><li class="tocify-item has-subitens" data-unique="anexos"><a>Anexos</a></li><ul class="tocify-subheader nav nav-list" data-tag="2" style=""><li class="tocify-item has-subitens" data-unique="lista-de-providers"><a>Lista de Providers</a></li><ul class="tocify-subheader nav nav-list" data-tag="3" style=""><li class="tocify-item" data-unique="providers-para-crédito"><a>Providers para Crédito</a></li><li class="tocify-item" data-unique="providers-pra-débito"><a>Providers pra Débito</a></li><li class="tocify-item" data-unique="providers-pra-voucher"><a>Providers pra Voucher</a></li><li class="tocify-item" data-unique="providers-para-zero-auth-via-verifycard"><a>Providers para Zero Auth via VerifyCard</a></li><li class="tocify-item" data-unique="providers-para-consulta-bin-via-verifycard"><a>Providers para Consulta BIN via VerifyCard</a></li><li class="tocify-item" data-unique="providers-para-boleto-com-registro"><a>Providers para Boleto com Registro</a></li><li class="tocify-item" data-unique="providers-para-transferência-eletronica-(débito-online)"><a>Providers para Transferência Eletronica (Débito Online)</a></li></ul><li class="tocify-item" data-unique="lista-de-status-da-transação"><a>Lista de Status da Transação</a></li><li class="tocify-item" data-unique="lista-de-status-do-antifraude"><a>Lista de Status do Antifraude</a></li><li class="tocify-item" data-unique="tabela-de-mdds"><a>Tabela de MDDs</a></li><li class="tocify-item" data-unique="lista-de-http-status-code"><a>Lista de HTTP Status Code</a></li><li class="tocify-item" data-unique="lista-de-status-da-recorrência"><a>Lista de Status da Recorrência</a></li><li class="tocify-item" data-unique="lista-de-reasoncode/reasonmessage"><a>Lista de ReasonCode/ReasonMessage</a></li><li class="tocify-item" data-unique="códigos-de-erros-da-api"><a>Códigos de Erros da API</a></li><li class="tocify-item" data-unique="cartões-para-teste-(simulado)"><a>Cartões para Teste (Simulado)</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].giftcategory"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].GiftCategory</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].hosthedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].HostHedge</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].nonsensicalhedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].NonSensicalHedge</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].obscenitieshedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].ObscenitiesHedge</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].timehedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].TimeHedge</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].phonehedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].PhoneHedge</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].velocityhedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].VelocityHedge</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].type"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].Type</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.shipping.shippingmethod"><a>Lista de Valores - Payment.FraudAnalysis.Shipping.ShippingMethod</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.journeytype"><a>Lista de Valores - Payment.FraudAnalysis.Travel.JourneyType</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.passengers[n].rating"><a>Lista de Valores - Payment.FraudAnalysis.Travel.Passengers[n].Rating</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.passengers[n].status"><a>Lista de Valores - Payment.FraudAnalysis.Travel.Passengers[n].Status</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.status"><a>Lista de Valores - Payment.FraudAnalysis.Status</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.fraudanalysisreasoncode"><a>Lista de Valores - Payment.FraudAnalysis.FraudAnalysisReasonCode</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.addressinfocode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.AddressInfoCode</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.factorcode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.FactorCode</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.internetinfocode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.InternetInfoCode</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.iproutingmethod"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.IpRoutingMethod</a></li><li class="tocify-item" data-unique="lista-de-valores-payment.chargebacks[n].status"><a>Lista de Valores - Payment.Chargebacks[n].Status</a></li></ul></ul></div>
+    <div id="toc" class="tocify">
+    <ul id="tocify-header0" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="introdução-ao-B2B-ViaVarejo"><a>Introdução ao B2B ViaVarejo API</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item has-subitens" data-unique="ambientes"><a>Ambientes</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="ambiente-Homologação"><a>Ambiente Homologação</a></li>
+                <li class="tocify-item" data-unique="ambiente-de-produção"><a>Ambiente de Produção</a></li>
+            </ul>
+            <li class="tocify-item" data-unique="suporte-ViaVarejo"><a>Suporte ViaVarejo</a></li>
+            <li class="tocify-item" data-unique="características-da-solução"><a>Características da Solução</a></li>
+            <li class="tocify-item" data-unique="arquitetura"><a>Arquitetura</a></li>
+        </ul>
+    </ul>
+    <ul id="tocify-header1" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="Disponibilização-das-informações"><a>Disponibilização das informações</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="display: block;">
+            <li class="tocify-item has-subitens" data-unique="Download-de-Arquivos"><a>Download de Arquivos</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="display: block;">
+                <li class="tocify-item has-subitens active" data-unique="Produto-Completo"><a>Produto Completo</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="display: block;">
+                    <li class="tocify-item" data-unique="Produto-Parcial"><a>Produto Parcial</a></li>
+                    <li class="tocify-item" data-unique="resposta"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="Produto-Parcial"><a>Produto Parcial</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição13"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta14"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="transação-com-autenticação"><a>Transação com autenticação</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item has-subitens" data-unique="autenticação-padrão"><a>Autenticação Padrão</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="requisição17"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta18"><a>Resposta</a></li>
+                    </ul>
+                    <li class="tocify-item has-subitens" data-unique="autenticação-externa"><a>Autenticação Externa</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="requisição20"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta21"><a>Resposta</a></li>
+                    </ul>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="transação-com-cartão-de-débito"><a>Transação com cartão de débito</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição23"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta24"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="cancelando/estornando-uma-transação"><a>Cancelando/Estornando uma transação</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição26"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta27"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="transação-com-velocity-check"><a>Transação com Velocity Check</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="resposta29"><a>Resposta</a></li>
+                </ul>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="boletos"><a>Boletos</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="boleto-registrado"><a>Boleto Registrado</a></li>
+                <li class="tocify-item has-subitens" data-unique="criando-uma-transação-de-boleto"><a>Criando uma transação de Boleto</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição33"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta34"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item" data-unique="conciliação-de-boletos"><a>Conciliação de Boletos</a></li>
+                <li class="tocify-item" data-unique="tabela-de-especificação-de-quantidade-de-caracteres-do-campo-por-provider"><a>Tabela de Especificação de quantidade de caracteres do campo por Provider</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="recorrência"><a>Recorrência</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item has-subitens" data-unique="autorizar-uma-transação-recorrente"><a>Autorizar uma transação recorrente</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição39"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta40"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="agendamento-de-uma-recorrência"><a>Agendamento de uma recorrência</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição42"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta43"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-dados-do-comprador"><a>Alterar dados do comprador</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição45"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta46"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-a-data-final-da-recorrência"><a>Alterar a data final da recorrência</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição48"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta49"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-o-intervalo-da-recorrência"><a>Alterar o intervalo da recorrência</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição51"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta52"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-o-dia-da-recorrência"><a>Alterar o dia da recorrência</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição54"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta55"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-o-valor-da-transação-da-recorrência"><a>Alterar o valor da transação da recorrência</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requsição"><a>Requsição</a></li>
+                    <li class="tocify-item" data-unique="resposta58"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-a-data-do-próximo-pagamento"><a>Alterar a data do próximo Pagamento</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição60"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta61"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="alterar-os-dados-de-pagamento-da-recorrência"><a>Alterar os dados de Pagamento da recorrência</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição63"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta64"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="desabilitando-um-pedido-recorrente"><a>Desabilitando um Pedido recorrente</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição66"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta67"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="reabilitando-um-pedido-recorrente"><a>Reabilitando um Pedido recorrente</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição69"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta70"><a>Resposta</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="transação-com-renova-fácil"><a>Transação com Renova Fácil</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="resposta72"><a>Resposta</a></li>
+                </ul>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="transferência-eletrônica"><a>Transferência Eletrônica</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item has-subitens" data-unique="criando-uma-transação74"><a>Criando uma transação</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição75"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta76"><a>Resposta</a></li>
+                </ul>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="e-wallets"><a>E-Wallets</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="o-que-são-e-wallets-(carteiras-digitais)"><a>O que são e-Wallets (Carteiras Digitais)</a></li>
+                <li class="tocify-item" data-unique="e-wallets-disponíveis"><a>E-Wallets Disponíveis</a></li>
+                <li class="tocify-item has-subitens" data-unique="integração"><a>Integração</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item has-subitens" data-unique="requisição-padrão"><a>Requisição Padrão</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="walletkey"><a>Walletkey</a></li>
+                        <li class="tocify-item" data-unique="ephemeralpublickey"><a>EphemeralPublicKey</a></li>
+                    </ul>
+                    <li class="tocify-item" data-unique="respostas"><a>Respostas</a></li>
+                </ul>
+                <li class="tocify-item has-subitens" data-unique="exemplos"><a>Exemplos</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item has-subitens" data-unique="apple-pay"><a>Apple Pay</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="passo-1.-contratação-na-apple"><a>Passo 1. Contratação na Apple</a></li>
+                        <li class="tocify-item" data-unique="passo-2.-obtenção-do-merchantidentifier"><a>Passo 2. Obtenção do MerchantIdentifier</a></li>
+                        <li class="tocify-item" data-unique="passo-3.-upload-do-certificado-csr"><a>Passo 3. Upload do Certificado CSR</a></li>
+                        <li class="tocify-item" data-unique="passo-4.-integração-com-apple-pay"><a>Passo 4. Integração com Apple Pay</a></li>
+                        <li class="tocify-item" data-unique="passo-5.-integração-com-B2B ViaVarejo-(decriptografia-e-autorização)"><a>Passo 5. Integração com B2B ViaVarejo (decriptografia e autorização)</a></li>
+                        <li class="tocify-item" data-unique="requisição92"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta93"><a>Resposta</a></li>
+                    </ul>
+                    <li class="tocify-item has-subitens" data-unique="samsung-pay"><a>Samsung Pay</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="requisição95"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta96"><a>Resposta</a></li>
+                    </ul>
+                    <li class="tocify-item has-subitens" data-unique="android-pay"><a>Android Pay</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="requisição98"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta99"><a>Resposta</a></li>
+                    </ul>
+                    <li class="tocify-item has-subitens" data-unique="masterpass"><a>MasterPass</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="requisição101"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta102"><a>Resposta</a></li>
+                    </ul>
+                    <li class="tocify-item has-subitens" data-unique="visa-checkout"><a>Visa Checkout</a></li>
+                    <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                        <li class="tocify-item" data-unique="requisição104"><a>Requisição</a></li>
+                        <li class="tocify-item" data-unique="resposta105"><a>Resposta</a></li>
+                    </ul>
+                </ul>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="voucher"><a>Voucher</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-voucher-alelo"><a>Criando uma transação com voucher Alelo</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                    <li class="tocify-item" data-unique="requisição108"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta109"><a>Resposta</a></li>
+                </ul>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="pagamentos-com-dcc-(conversor-de-moedas-da-adquirente-global-payments)"><a>Pagamentos com DCC (conversor de moedas da adquirente Global Payments)</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                <li class="tocify-item has-subitens" data-unique="processo-de-autorização-com-dcc"><a>Processo de autorização com DCC</a></li>
+                <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
+                    <li class="tocify-item" data-unique="requisição112"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta113"><a>Resposta</a></li>
+                    <li class="tocify-item" data-unique="requisição114"><a>Requisição</a></li>
+                    <li class="tocify-item" data-unique="resposta115"><a>Resposta</a></li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+    <ul id="tocify-header2" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="salvando-e-reutilizando-cartões"><a>Salvando e reutilizando cartões</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item has-subitens" data-unique="salvando-um-cartão-durante-uma-autorização"><a>Salvando um cartão durante uma autorização</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="requisição118"><a>Requisição</a></li>
+                <li class="tocify-item" data-unique="resposta119"><a>Resposta</a></li>
+                <li class="tocify-item" data-unique="resposta122"><a>Resposta</a></li>
+                <li class="tocify-item" data-unique="resposta125"><a>Resposta</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-card-token"><a>Criando uma transação com Card Token</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                <li class="tocify-item" data-unique="requisição121"><a>Requisição</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-alias"><a>Criando uma transação com Alias</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
+                <li class="tocify-item" data-unique="requisição124"><a>Requisição</a></li>
+            </ul>
+        </ul>
+    </ul>
+    <ul id="tocify-header3" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="pagamentos-com-análise-de-fraude"><a>Pagamentos com Análise de Fraude</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-análise-de-fraude-cybersource"><a>Criando uma transação com Análise de Fraude Cybersource</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="requisição128"><a>Requisição</a></li>
+                <li class="tocify-item" data-unique="resposta129"><a>Resposta</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="configuração-do-fingerprint"><a>Configuração do Fingerprint</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="cybersource"><a>Cybersource</a></li>
+                <li class="tocify-item" data-unique="integração-em-aplicativos-mobile"><a>Integração em aplicativos mobile</a></li>
+            </ul>
+        </ul>
+    </ul>
+    <ul id="tocify-header4" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="pagamentos-com-split-de-pagamento"><a>Pagamentos com Split de Pagamento</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item" data-unique="requisição134"><a>Requisição</a></li>
+            <li class="tocify-item" data-unique="resposta135"><a>Resposta</a></li>
+        </ul>
+    </ul>
+    <ul id="tocify-header5" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="consultas"><a>Consultas</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item has-subitens" data-unique="consultando-uma-transação-via-paymentid"><a>Consultando uma transação via PaymentID</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="requisição138"><a>Requisição</a></li>
+                <li class="tocify-item" data-unique="resposta139"><a>Resposta</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="consultando-uma-transação-de-boleto-via-paymentid"><a>Consultando uma transação de Boleto via PaymentID</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="requisição141"><a>Requisição</a></li>
+                <li class="tocify-item" data-unique="resposta142"><a>Resposta</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="consultando-uma-venda-pelo-identificador-da-loja"><a>Consultando uma venda pelo identificador da loja</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="requisição144"><a>Requisição</a></li>
+                <li class="tocify-item" data-unique="resposta145"><a>Resposta</a></li>
+            </ul>
+            <li class="tocify-item has-subitens" data-unique="consultando-um-pedido-recorrente"><a>Consultando um pedido Recorrente</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="requisição147"><a>Requisição</a></li>
+                <li class="tocify-item" data-unique="resposta148"><a>Resposta</a></li>
+            </ul>
+        </ul>
+    </ul>
+    <ul id="tocify-header6" class="tocify-header nav nav-list">
+        <li class="tocify-item" data-unique="post-de-notificação"><a>Post de Notificação</a></li>
+    </ul>
+    <ul id="tocify-header7" class="tocify-header nav nav-list">
+        <li class="tocify-item has-subitens" data-unique="anexos"><a>Anexos</a></li>
+        <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item has-subitens" data-unique="lista-de-providers"><a>Lista de Providers</a></li>
+            <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
+                <li class="tocify-item" data-unique="providers-para-crédito"><a>Providers para Crédito</a></li>
+                <li class="tocify-item" data-unique="providers-pra-débito"><a>Providers pra Débito</a></li>
+                <li class="tocify-item" data-unique="providers-pra-voucher"><a>Providers pra Voucher</a></li>
+                <li class="tocify-item" data-unique="providers-para-zero-auth-via-verifycard"><a>Providers para Zero Auth via VerifyCard</a></li>
+                <li class="tocify-item" data-unique="providers-para-consulta-bin-via-verifycard"><a>Providers para Consulta BIN via VerifyCard</a></li>
+                <li class="tocify-item" data-unique="providers-para-boleto-com-registro"><a>Providers para Boleto com Registro</a></li>
+                <li class="tocify-item" data-unique="providers-para-transferência-eletronica-(débito-online)"><a>Providers para Transferência Eletronica (Débito Online)</a></li>
+            </ul>
+            <li class="tocify-item" data-unique="lista-de-status-da-transação"><a>Lista de Status da Transação</a></li>
+            <li class="tocify-item" data-unique="lista-de-status-do-antifraude"><a>Lista de Status do Antifraude</a></li>
+            <li class="tocify-item" data-unique="tabela-de-mdds"><a>Tabela de MDDs</a></li>
+            <li class="tocify-item" data-unique="lista-de-http-status-code"><a>Lista de HTTP Status Code</a></li>
+            <li class="tocify-item" data-unique="lista-de-status-da-recorrência"><a>Lista de Status da Recorrência</a></li>
+            <li class="tocify-item" data-unique="lista-de-reasoncode/reasonmessage"><a>Lista de ReasonCode/ReasonMessage</a></li>
+            <li class="tocify-item" data-unique="códigos-de-erros-da-api"><a>Códigos de Erros da API</a></li>
+            <li class="tocify-item" data-unique="cartões-para-teste-(simulado)"><a>Cartões para Teste (Simulado)</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].giftcategory"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].GiftCategory</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].hosthedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].HostHedge</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].nonsensicalhedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].NonSensicalHedge</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].obscenitieshedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].ObscenitiesHedge</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].timehedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].TimeHedge</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].phonehedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].PhoneHedge</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].velocityhedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].VelocityHedge</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].type"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].Type</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.shipping.shippingmethod"><a>Lista de Valores - Payment.FraudAnalysis.Shipping.ShippingMethod</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.journeytype"><a>Lista de Valores - Payment.FraudAnalysis.Travel.JourneyType</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.passengers[n].rating"><a>Lista de Valores - Payment.FraudAnalysis.Travel.Passengers[n].Rating</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.passengers[n].status"><a>Lista de Valores - Payment.FraudAnalysis.Travel.Passengers[n].Status</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.status"><a>Lista de Valores - Payment.FraudAnalysis.Status</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.fraudanalysisreasoncode"><a>Lista de Valores - Payment.FraudAnalysis.FraudAnalysisReasonCode</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.addressinfocode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.AddressInfoCode</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.factorcode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.FactorCode</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.internetinfocode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.InternetInfoCode</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.iproutingmethod"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.IpRoutingMethod</a></li>
+            <li class="tocify-item" data-unique="lista-de-valores-payment.chargebacks[n].status"><a>Lista de Valores - Payment.Chargebacks[n].Status</a></li>
+        </ul>
+    </ul>
+</div>
+
 
     <div class="fixed-footer">
         
