@@ -141,7 +141,7 @@
             <div class="post">
   <div name="introdução-ao-B2B-ViaVarejo" data-unique="introdução-ao-B2B-ViaVarejo"></div><h1 id="introdução-ao-B2B-ViaVarejo">Integração B2B - Via Varejo X Parceiros</h1>
 
-<p><strong>O objetivo desta documentação é orientar o desenvolvedor sobre como integrar com o API do B2B, descrevendo os serviços disponíveis com exemplos de requisição e respostas.</strong></p>
+<p><strong>O objetivo desta documentação é orientar o desenvolvedor sobre como integrar com a API do B2B da ViaVarejo, descrevendo os serviços disponíveis com exemplos de requisição e respostas.</strong></p>
 
 <p>Todas as operações requerem credenciais de acesso específicos para respectivos ambientes: <strong>Homologação</strong> e <strong>Produção</strong>. <a href="https://github.com/ViaVarejoB2B/B2B-ViaVarejo">Para executar</a> uma operação, combine o endpoint base do ambiente com o endpoint da operação desejada e envie utilizando o VERBO HTTP conforme descrito na operação.</p>
 
@@ -161,11 +161,20 @@
   <tbody>
     <tr>
       <td>Credenciais de Acesso à API</td>
-      <td>Acesse o <a href="https://cadastroHomologação.ViaVarejo.com.br/">Cadastro do Homologação</a> e crie uma conta de testes.<br>Ao fim do cadastro você receberá um <code class="highlighter-rouge">MerchantId</code> e um <code class="highlighter-rouge">MerchantKey</code>,<br> que deverão ser utilizados para autenticar todas as requisições feitas para os endpoints da API</td>
+      <td>Acesse o <a href=mailto:comercialb2b@viavarejo.com.br">Cadastro do Homologação</a> e crie uma conta de testes.<br>Ao fim do cadastro você receberá um <code class="highlighter-rouge">Token</code>, <code class="highlighter-rouge">CNPJ</code>,<code class="highlighter-rouge">Código do Parceiro</code> e <code class="highlighter-rouge">Campanha</code><br> que deverão ser utilizados para autenticar todas as requisições feitas para os endpoints da API</td>
     </tr>
     <tr>
-      <td>Endpoint Transacional</td>
-      <td>https://apiHomologação.ViaVarejo.com.br/</td>
+      <td>Endpoint Transacional Pontofrio</td>
+      <td>http://api-integracao-b2b.pontofriohlg.net/pedidos</td>
+    </tr>
+	    <tr>
+      <td>Endpoint Transacional Casas Bahia</td>
+      <td>http://api-integracao-b2b.casasbahiahlg.net/pedidos</td>
+    </tr>
+	    </tr>
+	    <tr>
+      <td>Endpoint Transacional Extra</td>
+      <td>http://api-integracao-b2b.extrahlg.net/pedidos</td>
     </tr>
     <tr>
       <td>Endpoint para Serviços de Consultas</td>
