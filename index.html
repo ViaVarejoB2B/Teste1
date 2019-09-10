@@ -60,9 +60,7 @@
 
         <li><a data-language-name="json" class="active">JSON</a></li>
 
-        <li><a data-language-name="shell">cURL</a></li>
-
-        <li><a data-language-name="html">HTML</a></li>
+        <li><a data-language-name="xml">XML</a></li>
 
       </ul>
     </div>
@@ -276,11 +274,8 @@
         <li><strong>Segurança</strong>: a troca de informações se dá sempre entre o Servidor da Loja e da ViaVarejo, ou
           seja, sem o browser do comprador.</li>
         <li><strong>Multiplataforma</strong>: a integração é realizada através de Web Service REST.</li>
-      </ul>
-
-      <div name="arquitetura" data-unique="arquitetura"></div>
+      </ul>      <div name="arquitetura" data-unique="arquitetura"></div>
       <h2 id="arquitetura">Arquitetura</h2>
-
       <p>A integração é realizada através de serviços disponibilizados como Web Services. O modelo empregado é bastante
         simples: Existem duas URLs (endpoints), uma específica para autorização, captura e cancelamento de transações, e
         uma outra para operações como pesquisa de transações. Essas duas URLs receberão as mensagens HTTP através dos
@@ -368,36 +363,28 @@
             </tr>
             <tr>
               <td>Urls de Homologação</td>
-              <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/Arquivos/CatalogoB2B/Completo?idParceiro=<code
-                class="highlighter-rouge">{Código do Parceiro}</td>
+              <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/Arquivos/CatalogoB2B/Completo?idParceiro=<code class="highlighter-rouge">{Código do Parceiro}</code>
+			  </td>
             </tr>
-            <tr>
+            
+			<tr>
               <td>Urls de Produção</td>
               <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>.com.br/Arquivos/CatalogoB2B/Completo?idParceiro=<code
-                class="highlighter-rouge">{Código do Parceiro}</td>
-            </tr>
-  
+                class="highlighter-rouge">{Código do Parceiro}</code></td>       
+			</tr>
             
-            
-          </tbody>
+            </tbody>
         </table>
-
-      <div class="code-fullscreen">
-        
-          <a data-language-name="xml" class="XML">XML</a></div>
-          <div class="language-json highlighter-rouge" style="display: none;"><a class="fa expand-btn"
-              title="Comutar"><i class="fa fa-expand" aria-hidden="true"></i></a>
+        <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
+      <div class="code-fullscreen">       
+          <a data-language-name="xml" class="active"></a></div>
+		  
+         <div class="language-xml highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+              ></a>
             <div class="highlight">
-              <pre class="highlight"><code>
-</span></code></pre>
-            </div>
-          </div>
-          <div class="language-shell highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-              title="Comutar"><i class="fa fa-expand" aria-hidden="true"></i></a>
-            <div class="highlight">
-              <pre class="highlight"><code>
-  
-                <<span class="s2">?xml version</span>=<span class="s2"></span>"1.0"?</span>
+              <pre class="highlight">
+			  <code> 
+                <<span class="s2">?xml version</span>=<span class="s2">"1.0"?</span>
                 <<span class="s2">XMLProduto DataCriacao</span>=<span class="s2">"16/12/2018 12:04:45"</span>>
                 <<span class="s2">Produtos</span>>
                 <<span class="s2">Produto Codigo</span>=<span class="s2">"7253" DisplayName</span>="Produto Exemplo" DescricaoLonga="Descrição Longa de exemplo" Categoria="361" CodigoFabricante="23284" Fabricante="Multivisão" FotoPequena="2613886" FotoMedia="2613904" FotoGrande="5677024" PalavraChave="Exemplo, Produto, Via Varejo" MaisVendidos="0">
@@ -414,15 +401,15 @@
                 <<span class="s2">Grupos</span>>
                 <<span class="s2">Grupo Codigo</span>=<span class="s2"></span>"740" Nome="Características">
                 <<span class="s2">Itens</span>>
-                <<span class="s2">Item Descricao=<span class="s2"></span>"Características Gerais" Valor="- Para tv de 19&quot; a 32&quot;- Fix. VESA 50 / 75 / 100 / 100x200 / 120x180 / 200" /</span>>
-                <<span class="s2">Item Descricao=<span class="s2"></span>"Suporta até (kg)" Valor="30" /</span>>
-                <<span class="s2">Item Descricao=<span class="s2"></span>"Acabamento" Valor="Desenvolvido em Alumínio e Revestido com Pintura Epóxi (Eletrostática)" /</span>>
+                <<span class="s2">Item Descricao</span>=<span class="s2">"Características Gerais" Valor="- Para tv de 19&quot; a 32&quot;- Fix. VESA 50 / 75 / 100 / 100x200 / 120x180 / 200" /</span>>
+                <<span class="s2">Item Descricao</span>=<span class="s2">"Suporta até (kg)" Valor="30" /</span>>
+                <<span class="s2">Item Descricao</span>=<span class="s2">"Acabamento" Valor="Desenvolvido em Alumínio e Revestido com Pintura Epóxi (Eletrostática)" /</span>>
                 <<span class="s2">/Itens</span>>
                 <<span class="s2">/Grupo</span>>
-                <<span class="s2">Grupo Codigo=<span class="s2">"514" Nome="Especificações Técnicas"</span>>
+                <<span class="s2">Grupo Codigo</span>=<span class="s2">"514" Nome="Especificações Técnicas"</span>>
                 <<span class="s2">Itens</span>>
-                <<span class="s2">Item Descricao=<span class="s2">"Atenção" Valor="Não nos responsabilizamos pela montagem " /</span>>
-                <<span class="s2">Item Descricao=<span class="s2">"Conteúdo da embalagem" Valor="- 1 Suporte Automatizado de Parede Multivisão TWISTO 1532" /</span>>
+                <<span class="s2">Item Descricao</span>=<span class="s2">"Atenção" Valor="Não nos responsabilizamos pela montagem " /</span>>
+                <<span class="s2">Item Descricao</span>=<span class="s2">"Conteúdo da embalagem" Valor="- 1 Suporte Automatizado de Parede Multivisão TWISTO 1532" /</span>>
                 <<span class="s2">Item Descricao=<span class="s2"></span>"Garantia" Valor="12 meses" /</span>>
                 <<span class="s2">/Itens</span>>
                 <<span class="s2">/Grupo</span>>
@@ -431,15 +418,296 @@
                 <<span class="s2">/Produto</span>>
                 <<span class="s2">/Produtos</span>>
                 <<span class="s2">/XMLProduto</span>>
-
-</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-
+                  </code>
+				      </pre>
+             </div>
+                </div>
+                 
 
 
+                <div name="Produto-Parcial" data-unique="Produto-Parcial"></div>
+                <h3 id="Produto-Parcial">Produto Parcial</h3>
+                
+                <p>Arquivo que contém os produtos e skus que foram alterados nas bandeiras, nas últimas 24h. Serão gerados produtos ativos e inativos nesse processo. Os produtos são gerados em arquivos XML, agrupados por categoria. Ex: B2BParcial_001.xml, B2BParcial_013.xml, etc.</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Informação</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Recorrência</td>
+                        <td>Diária - <code class="highlighter-rouge">Diária às 05:00h</code></td>
+                      </tr>
+                      <tr>
+                        <td>Nome do arquivo</td>
+                        <td>B2BParcial.zip</td>
+                      </tr>
+                      <tr>
+                        <td>Urls de Homologação</td>
+                        <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/Arquivos/CatalogoB2B/Parcial?idParceiro=<code class="highlighter-rouge">{Código do Parceiro}</code>
+                  </td>
+                      </tr>
+                      
+                <tr>
+                        <td>Urls de Produção</td>
+                        <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>.com.br/Arquivos/CatalogoB2B/Parcial?idParceiro=<code
+                          class="highlighter-rouge">{Código do Parceiro}</code></td>       
+                </tr>
+                      
+                      </tbody>
+                  </table>
+                  
+                
+
+                <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
+              <div class="code-fullscreen">       
+                  <a data-language-name="xml" class="active"></a></div>
+              
+                 <div class="language-xml highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                      ></a>
+                    <div class="highlight">
+                      <pre class="highlight">
+                <code> 
+                        <<span class="s2">?xml version</span>=<span class="s2">"1.0"?</span>
+                        <<span class="s2">XMLProduto DataCriacao</span>=<span class="s2">"16/12/2018 12:04:45"</span>>
+                        <<span class="s2">Produtos</span>>
+                        <<span class="s2">Produto Codigo</span>=<span class="s2">"7253" DisplayName</span>="Produto Exemplo" DescricaoLonga="Descrição Longa de exemplo" Categoria="361" CodigoFabricante="23284" Fabricante="Multivisão" FotoPequena="2613886" FotoMedia="2613904" FotoGrande="5677024" PalavraChave="Exemplo, Produto, Via Varejo" MaisVendidos="0">
+                        <<span class="s2">Skus</span>>
+                        <<span class="s2">Sku Codigo</span>=<span class="s2"></span>"8507" Preco="1.984,90" UltimaModificacao="07/12/2018 08:48:28" Habilitado="true" Modelo="." EAN="7896643410268" Peso="3710.0000" Altura="16.0000" Largura="23.0000" Comprimento="26.0000">
+                        <<span class="s2">Imagens</span>>
+                        <<span class="s2">Imagem ImagemMenor</span>=<span class="s2"></span>"2613874" ImagemMaior="2613883" ImagemZoom="5663544" Ordem="1" />
+                        <<span class="s2">Imagem ImagemMenor</span>=<span class="s2"></span>"5664354" ImagemMaior="5664357" Ordem="2" />
+                        <<span class="s2">/Imagens</span>>
+                        <<span class="s2">Grupos /</span>>
+                        <<span class="s2">/Sku</span>>
+                        <<span class="s2">/Skus</span>>
+                        <<span class="s2">FichaTecnica</span>>
+                        <<span class="s2">Grupos</span>>
+                        <<span class="s2">Grupo Codigo</span>=<span class="s2"></span>"740" Nome="Características">
+                        <<span class="s2">Itens</span>>
+                        <<span class="s2">Item Descricao</span>=<span class="s2">"Características Gerais" Valor="- Para tv de 19&quot; a 32&quot;- Fix. VESA 50 / 75 / 100 / 100x200 / 120x180 / 200" /</span>>
+                        <<span class="s2">Item Descricao</span>=<span class="s2">"Suporta até (kg)" Valor="30" /</span>>
+                        <<span class="s2">Item Descricao</span>=<span class="s2">"Acabamento" Valor="Desenvolvido em Alumínio e Revestido com Pintura Epóxi (Eletrostática)" /</span>>
+                        <<span class="s2">/Itens</span>>
+                        <<span class="s2">/Grupo</span>>
+                        <<span class="s2">Grupo Codigo</span>=<span class="s2">"514" Nome="Especificações Técnicas"</span>>
+                        <<span class="s2">Itens</span>>
+                        <<span class="s2">Item Descricao</span>=<span class="s2">"Atenção" Valor="Não nos responsabilizamos pela montagem " /</span>>
+                        <<span class="s2">Item Descricao</span>=<span class="s2">"Conteúdo da embalagem" Valor="- 1 Suporte Automatizado de Parede Multivisão TWISTO 1532" /</span>>
+                        <<span class="s2">Item Descricao=<span class="s2"></span>"Garantia" Valor="12 meses" /</span>>
+                        <<span class="s2">/Itens</span>>
+                        <<span class="s2">/Grupo</span>>
+                        <<span class="s2">/Grupos</span>>
+                        <<span class="s2">/FichaTecnica</span>>
+                        <<span class="s2">/Produto</span>>
+                        <<span class="s2">/Produtos</span>>
+                        <<span class="s2">/XMLProduto</span>>
+                          </code>
+                      </pre>
+                     </div>
+                        </div>
+
+                        <div name="Categoria" data-unique="Categoria"></div>
+                <h3 id="Categoria">Categoria</h3>
+                
+                <p>Arquivo que contém todas as categorias ativas das bandeiras. As categorias são geradas dentro de apenas um arquivo B2BCategoria.xml . Os xmls contém a categoria e o relacionamento de herança, que se relacionam através da propriedade idCategoriaPai. A propriedade nível indica qual é o nível da categoria (de 1 a 3)</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Informação</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Recorrência</td>
+                        <td>Diária - <code class="highlighter-rouge">Diária às 05:00h</code></td>
+                      </tr>
+                      <tr>
+                        <td>Nome do arquivo</td>
+                        <td>B2BParcial.zip</td>
+                      </tr>
+                      <tr>
+                        <td>Urls de Homologação</td>
+                        <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/Arquivos/CatalogoB2B/Categoria?idParceiro=<code class="highlighter-rouge">{Código do Parceiro}</code>
+                  </td>
+                      </tr>
+                      
+                <tr>
+                        <td>Urls de Produção</td>
+                        <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>.com.br/Arquivos/CatalogoB2B/Categoria?idParceiro=<code
+                          class="highlighter-rouge">{Código do Parceiro}</code></td>       
+                </tr>
+                      
+                      </tbody>
+                  </table>
+                 
+                
+                <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
+              <div class="code-fullscreen">       
+                  <a data-language-name="xml" class="active"></a></div>
+              
+                 <div class="language-xml highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                      ></a>
+                    <div class="highlight">
+                      <pre class="highlight">
+                <code> 
+                  <<span class="s2">Resposta DataCriacao="18/12/2018 12:06:35"></span>
+                    <<span class="s2">Categorias</span>>
+                    <<span class="s2">Categoria IdCategoria=</span>"2673"<span class="s2">IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"1"<span class="s2"> Nome=</span>"Alameda de Serviços">
+                    <<span class="s2">Categoria IdCategoria=</span>"3337"<span class="s2">IdCategoriaPai=</span>"2673"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"2"<span class="s2"> Nome=</span>"Assinatura Digital" />
+                    <<span class="s2">Categoria IdCategoria=</span>"2701"<span class="s2">IdCategoriaPai=</span>"2673"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"2"<span class="s2"> Nome=</span>"Cartão Presente" />
+                    <<span class="s2">Categoria IdCategoria=</span>"2043"<span class="s2">IdCategoriaPai=</span>"2673"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"2"<span class="s2"> Nome=</span>"Cursos Online">
+                    <<span class="s2">Categoria IdCategoria=</span>"787"<span class="s2">IdCategoriaPai=</span>"2043"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"3"<span class="s2"> Nome=</span>"Curso Educação" />
+                    <<span class="s2">Categoria IdCategoria=</span>"1986"<span class="s2">IdCategoriaPai=</span>"2043"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"3"<span class="s2"> Nome=</span>"Curso Fotografia" />
+                    <<span class="s2">Categoria IdCategoria=</span>"734"<span class="s2">IdCategoriaPai=</span>"2043"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"3"<span class="s2"> Nome=</span>"Curso Gestão e Negócios" />
+                    <<span class="s2">Categoria IdCategoria=</span>"1988"<span class="s2">IdCategoriaPai=</span>"2043"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"3"<span class="s2"> Nome=</span>"Curso Língua Portuguesa" />
+                    <<span class="s2">Categoria IdCategoria=</span>"2003"<span class="s2">IdCategoriaPai=</span>"2043"<span class="s2"> IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"3"<span class="s2"> Nome=</span>"Curso Online Arte e Cultura" />
+                    <<span class="s2">/Categorias</span>>
+                    <<span class="s2">/Resposta</span>>
+                          </code>
+                      </pre>
+                     </div>
+                 </div>
+
+                 <div name="Estoque" data-unique="Estoque"></div>
+                 <h3 id="Estoque">Estoque</h3>
+                 
+                 <p>Arquivo que contém o estoque de produtos das bandeiras. O espelho atual do estoque é gerado no arquivo B2BEstoque.xml.</p>
+                   <table>
+                     <thead>
+                       <tr>
+                         <th>Informação</th>
+                         <th></th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <td>Recorrência</td>
+                         <td>de 1h em 1h - <code class="highlighter-rouge">de 1h em 1h -</code></td>
+                       </tr>
+                       <tr>
+                         <td>Nome do arquivo</td>
+                         <td>B2BEstoque.zip</td>
+                       </tr>
+                       <tr>
+                         <td>Urls de Homologação</td>
+                         <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/Arquivos/CatalogoB2B/Estoque?idParceiro=<code class="highlighter-rouge">{Código do Parceiro}</code>
+                   </td>
+                       </tr>
+                       
+                 <tr>
+                         <td>Urls de Produção</td>
+                         <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>.com.br/Arquivos/CatalogoB2B/Estoque?idParceiro=<code
+                           class="highlighter-rouge">{Código do Parceiro}</code></td>       
+                 </tr>
+                       
+                       </tbody>
+                   </table>
+                   
+                 
+                   <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
+                   <div class="code-fullscreen">       
+                       <a data-language-name="xml" class="active"></a></div>
+                   
+                      <div class="language-xml highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                           ></a>
+                         <div class="highlight">
+                           <pre class="highlight">
+                     <code>
+                  <<span class="s2">?xml version="1.0"?></span>
+                  <<span class="s2">XMLEstoqueEntidade DataCriacao=</span>"18/12/2018 02:21:02">
+                  <<span class="s2">Estoques</span>>
+                  <<span class="s2">Estoque IdSku=</span>"2142"<span class="s2"> IdLojista=</span>"15"<span class="s2"> FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"0"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-17T06:10:02"<span class="s2"> />
+                  <<span class="s2">Estoque IdSku=</span>"2197"<span class="s2"> IdLojista=</span>"15"<span class="s2"> FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"72"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-17T14:30:02"<span class="s2"> />
+                  <<span class="s2">Estoque IdSku=</span>"2198"<span class="s2"> IdLojista=</span>"15"<span class="s2"> FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"1"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-17T06:30:01"<span class="s2"> />
+                  <<span class="s2">Estoque IdSku=</span>"2202"<span class="s2"> IdLojista=</span>"15"<span class="s2"> FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"59"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-18T13:50:02"<span class="s2"> />
+                  <<span class="s2">/Estoques</span>>
+                  <<span class="s2">/XMLEstoqueEntidade</span>>
+                  
+                           </code>
+                       </pre>
+                      </div>
+                  </div>
+				  
+
+
+                  <div name="Disponibilidade" data-unique="Diponibilidade"></div>
+                  <h3 id="Disponibilidade">Disponibilidade</h3>
+                  
+                  <p>AArquivo que contém todos os preços e disponibilidade dos skus ativos das bandeiras. O nó TipoEntrega informa quais são as formas de entrega disponíveis para o Sku (ex: retira em loja) Diferentemente da disponibilização via mensageria (tópico Mensageria), o arquivo de disponibilidade, gera preços e disponibilidade “default” das bandeiras.  </p>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Informação</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Recorrência</td>
+                          <td>de 1h em 1h - <code class="highlighter-rouge">de 1h em 1h -</code></td>
+                        </tr>
+                        <tr>
+                          <td>Nome do arquivo</td>
+                          <td>B2Bdisponibilidade<code class="highlighter-rouge">_codigoParceiro_</code>DataHoraMinuto.zip</td>
+                        </tr>
+                        <tr>
+                          <td>Urls de Homologação</td>
+                          <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/Arquivos/CatalogoB2B/Estoque?idParceiro=<code class="highlighter-rouge">{Código do Parceiro}</code>
+                    </td>
+                        </tr>
+                        
+                  <tr>
+                          <td>Urls de Produção</td>
+                          <td>http://b2b.<code class="highlighter-rouge">{Bandeira}</code>.com.br/Arquivos/CatalogoB2B/Estoque?idParceiro=<code
+                            class="highlighter-rouge">{Código do Parceiro}</code></td>       
+                  </tr>
+                        
+                        </tbody>
+                    </table>
+                    
+                  
+                    <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
+                    <div class="code-fullscreen">       
+                        <a data-language-name="xml" class="active"></a></div>
+                    
+                       <div class="language-xml highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                            ></a>
+                          <div class="highlight">
+                            <pre class="highlight">
+                      <code>
+                   <<span class="s2">?xml version="1.0"?></span>
+                   <<span class="s2">XMLEstoqueEntidade DataCriacao=</span>"18/12/2018 02:21:02">
+                   <<span class="s2">Estoques</span>>
+                   <<span class="s2">Estoque IdSku=</span>"2142"<span class="s2">IdLojista=</span>"15"<span class="s2">FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"0"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-17T06:10:02"<span class="s2"> />
+                   <<span class="s2">Estoque IdSku=</span>"2197"<span class="s2">IdLojista=</span>"15"<span class="s2">FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"72"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-17T14:30:02"<span class="s2"> />
+                   <<span class="s2">Estoque IdSku=</span>"2198"<span class="s2">IdLojista=</span>"15"<span class="s2">FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"1"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-17T06:30:01"<span class="s2"> />
+                   <<span class="s2">Estoque IdSku=</span>"2202"<span class="s2">IdLojista=</span>"15"<span class="s2">FlagSkuSaldoDisponivel=</span>"true"<span class="s2"> SaldoEstoque=</span>"59"<span class="s2"> DataUltimaAtualizacao=</span>"2018-12-18T13:50:02"<span class="s2"> />
+                   <<span class="s2">/Estoques</span>>
+                   <<span class="s2">/XMLEstoqueEntidade</span>>
+                   
+                            </code>
+                        </pre>
+                       </div>
+                   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="post">
       <div class="table-wrap" style="min-height:1372px;">
         <table>
           <thead>
@@ -835,12 +1103,10 @@
 
       <div class="code-fullscreen">
         <div class="language-group">
-          <div class="language-buttons"><a data-language-name="json" class="active">JSON</a><a
-              data-language-name="shell">cURL</a><a data-language-name="html">HTML</a></div>
-          <div class="language-json highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-              title="Comutar"><i class="fa fa-expand" aria-hidden="true"></i></a>
-            <div class="highlight">
-              <pre class="highlight"><code><span class="w">
+            <div class="language-buttons"><a data-language-name="json" class="active">JSON</a><a data-language-name="shell" class="">cURL</a><a data-language-name="html" class="">HTML</a></div>
+            <div class="language-json highlighter-rouge" style="display: block;"><a class="fa expand-btn" title="Comutar"><i class="fa fa-expand" aria-hidden="true"></i></a>
+                <div class="highlight">
+                    <pre class="highlight"><code><span class="p">{</span><span class="w">  
 </span><span class="p">{</span><span class="w">
 </span><span class="nl">"MerchantOrderId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017051002"</span><span class="p">,</span><span class="w">
     </span><span class="nl">"Customer"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -18160,12 +18426,12 @@ curl
           <img src="./index_files/logo.png" alt="Documentações e tutoriais">
         </a>
         <div></div>
+		</div>
       </div>
 
       <div id="toc" class="tocify">
         <ul id="tocify-header0" class="tocify-header nav nav-list">
-          <li class="tocify-item has-subitens" data-unique="introdução-ao-B2B-ViaVarejo"><a>Introdução ao B2B ViaVarejo
-              API</a></li>
+          <li class="tocify-item has-subitens" data-unique="introdução-ao-B2B-ViaVarejo"><a>API B2B ViaVarejo</a></li>
           <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
             <li class="tocify-item has-subitens" data-unique="ambientes"><a>Ambientes</a></li>
             <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
@@ -18177,24 +18443,22 @@ curl
             <li class="tocify-item" data-unique="arquitetura"><a>Arquitetura</a></li>
           </ul>
         </ul>
+        
         <ul id="tocify-header1" class="tocify-header nav nav-list">
-          <li class="tocify-item has-subitens" data-unique="Disponibilização-das-informações"><a>Disponibilização das
-              informações</a></li>
-          <ul class="tocify-subheader nav nav-list" data-tag="2" style="display: block;">
-            <li class="tocify-item has-subitens" data-unique="Download-de-Arquivos"><a>Download de Arquivos</a></li>
-            <ul class="tocify-subheader nav nav-list" data-tag="3" style="display: block;">
-              <li class="tocify-item has-subitens active" data-unique="Produto-Completo"><a>Produto Completo</a></li>
-              <ul class="tocify-subheader nav nav-list" data-tag="4" style="display: block;">
-                <li class="tocify-item" data-unique="Produto-Parcial"><a>Produto Parcial</a></li>
-                <li class="tocify-item" data-unique="resposta"><a>Resposta</a></li>
-              </ul>
-              <li class="tocify-item has-subitens" data-unique="Produto-Parcial"><a>Produto Parcial</a></li>
-              <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
-                <li class="tocify-item" data-unique="requisição13"><a>Requisição</a></li>
-                <li class="tocify-item" data-unique="resposta14"><a>Resposta</a></li>
-              </ul>
-              <li class="tocify-item has-subitens" data-unique="transação-com-autenticação"><a>Transação com
-                  autenticação</a></li>
+          <li class="tocify-item has-subitens" data-unique="Disponibilização-das-informações"><a>Disponibilização das Informações</a></li>
+          <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
+            <li class="tocify-item" data-unique="Download-de-Arquivos"><a>Download de Arquivos</a></li>
+              <li class="tocify-item" data-unique="Produto-Completo"><a>Produto Completo</a></li>
+              <li class="tocify-item" data-unique="Produto-Parcial"><a>Produto Parcial</a></li>
+              <li class="tocify-item" data-unique="Categoria"><a>Categoria</a></li>
+              <li class="tocify-item" data-unique="Estoque"><a>Estoque</a></li>
+              <li class="tocify-item" data-unique="Disponibilidade"><a>Disponibilidade</a></li>
+              <li class="tocify-item" data-unique="suporte-ViaVarejo"><a>Suporte ViaVarejo</a></li>
+            <li class="tocify-item" data-unique="características-da-solução"><a>Características da Solução</a></li>
+            <li class="tocify-item" data-unique="arquitetura"><a>Arquitetura</a></li>
+          </ul>
+        </ul>
+              
               <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
                 <li class="tocify-item has-subitens" data-unique="autenticação-padrão"><a>Autenticação Padrão</a></li>
                 <ul class="tocify-subheader nav nav-list" data-tag="5" style="">
@@ -18661,7 +18925,7 @@ curl
 
     langs += "<a data-language-name='json'>JSON</a>";
 
-    langs += "<a data-language-name='shell'>XML</a>";
+    langs += "<a data-language-name='xml'>XML</a>";
 
   
 
@@ -18672,7 +18936,7 @@ curl
   <script src="./index_files/lang.js.download"></script>
   <script>
     $(function () {
-      setupLanguages(["json", "shell", "html",]);
+      setupLanguages(["json", "xml", "html",]);
     });
   </script>
 
