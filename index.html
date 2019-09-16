@@ -58,9 +58,9 @@
       <a class="hide-btn" id="hide-button" title="Comutar"><i class="fa fa-bars" aria-hidden="true"></i></a>
       <ul class="language-buttons">
 
-        <li><a data-language-name="json" class="active">JSON</a></li>
+        <li><a data-language-name="Request" class="active">Request</a></li>
 
-        <li><a data-language-name="xml">XML</a></li>
+        <li><a data-language-name="Response">Response</a></li>
 
       </ul>
     </div>
@@ -375,12 +375,21 @@
             
             </tbody>
         </table>
-        <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
-      <div class="code-fullscreen">       
-          <a data-language-name="Response" class="active"></a></div>
-		  
-         <div class="language-Response highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-              ></a>
+        <div name="xml01" data-unique="xml01"></div><h4 id="xml01">XML Padrão Produto Completo</h4>
+      <div class="code-fullscreen">
+          <a data-language-name="Request" class="active"></a> </div>
+          <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+            ></a>
+            <div class="highlight">
+              <pre class="highlight">
+        <code>
+            $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Completo?idParceiro=13 -o ProdutoCompleto.zip
+
+        </code></pre>
+</div>
+          </div>       
+        
+           <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"></a>
             <div class="highlight">
               <pre class="highlight">
 			  <code> 
@@ -461,15 +470,24 @@
                   
                 
 
-                <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
-              <div class="code-fullscreen">       
-                  <a data-language-name="Response" class="active"></a></div>
-              
-                 <div class="language-Response highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-                      ></a>
-                    <div class="highlight">
-                      <pre class="highlight">
-                <code> 
+                  <div name="xml02" data-unique="xml02"></div><h4 id="xml02">XML Padrão Produto Parcial</h4>
+                  <div class="code-fullscreen">
+                      <a data-language-name="Request" class="active"></a> </div>
+                      <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                        ></a>
+                        <div class="highlight">
+                          <pre class="highlight">
+                    <code>
+                        $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Parcial?idParceiro=13 -o ProdutoParcial.zip
+            
+                    </code></pre>
+            </div>
+                      </div>       
+                    
+                       <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"></a>
+                        <div class="highlight">
+                          <pre class="highlight">
+                    <code> 
  <<span class="s2">?xml version</span>=<span class="s2">"1.0"?</span>    <<span class="s2">XMLProduto DataCriacao</span>=<span class="s2">"16/12/2018 12:04:45"</span>>
  <<span class="s2">Produtos</span>>
  <<span class="s2">Produto Codigo</span>=<span class="s2">"7253" DisplayName</span>="Produto Exemplo" DescricaoLonga="Descrição Longa de exemplo" Categoria="361" CodigoFabricante="23284" Fabricante="Multivisão" FotoPequena="2613886" FotoMedia="2613904" FotoGrande="5677024" PalavraChave="Exemplo, Produto, Via Varejo" MaisVendidos="0">
@@ -544,15 +562,24 @@
                   </table>
                  
                 
-                <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
-              <div class="code-fullscreen">       
-                  <a data-language-name="Response" class="active"></a></div>
-              
-                 <div class="language-Response highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-                      ></a>
-                    <div class="highlight">
-                      <pre class="highlight">
-                <code> 
+                  <div name="xml03" data-unique="xml03"></div><h4 id="xml03">XML Padrão Categoria</h4>
+                  <div class="code-fullscreen">
+                      <a data-language-name="Request" class="active"></a> </div>
+                      <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                        ></a>
+                        <div class="highlight">
+                          <pre class="highlight">
+                    <code>
+                        $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Categoria?idParceiro=13 -o Categoria.zip
+            
+                    </code></pre>
+            </div>
+                      </div>       
+                    
+                       <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"></a>
+                        <div class="highlight">
+                          <pre class="highlight">
+                    <code> 
 <<span class="s2">Resposta DataCriacao="18/12/2018 12:06:35"></span>
 <<span class="s2">Categorias</span>>
 <<span class="s2">Categoria IdCategoria=</span>"2673"<span class="s2">IdDepartamento=</span>"2673"<span class="s2"> Level=</span>"1"<span class="s2"> Nome=</span>"Alameda de Serviços">
@@ -607,15 +634,24 @@
                    </table>
                    
                  
-                   <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
-                   <div class="code-fullscreen">       
-                       <a data-language-name="Response" class="active"></a></div>
-                   
-                      <div class="language-Response highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-                           ></a>
-                         <div class="highlight">
-                           <pre class="highlight">
-                     <code>
+                   <div name="xml04" data-unique="xml04"></div><h4 id="xml04">XML Padrão Estoque</h4>
+      <div class="code-fullscreen">
+          <a data-language-name="Request" class="active"></a> </div>
+          <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+            ></a>
+            <div class="highlight">
+              <pre class="highlight">
+        <code>
+            $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Estoque?idParceiro=13 -o Estoque.zip
+
+        </code></pre>
+</div>
+          </div>       
+        
+           <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"></a>
+            <div class="highlight">
+              <pre class="highlight">
+			  <code> 
 <<span class="s2">?xml version="1.0"?></span>
 <<span class="s2">XMLEstoqueEntidade DataCriacao=</span>"18/12/2018 02:21:02">
 <<span class="s2">Estoques</span>>
@@ -669,15 +705,24 @@
                     </table>
                     
                   
-                    <div name="requisição" data-unique="requisição"></div><h4 id="requisição">XML Padrão</h4>
-                    <div class="code-fullscreen">       
-                        <a data-language-name="Response" class="active"></a></div>
-                    
-                       <div class="language-Response highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-                            ></a>
-                          <div class="highlight">
-                            <pre class="highlight">
-                      <code>
+                    <div name="xml05" data-unique="xml05"></div><h4 id="xml05">XML Padrão Disponibilidade</h4>
+      <div class="code-fullscreen">
+          <a data-language-name="Request" class="active"></a> </div>
+          <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+            ></a>
+            <div class="highlight">
+              <pre class="highlight">
+        <code>
+            $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParceiro=13 -o Disponibilidade.zip
+
+        </code></pre>
+</div>
+          </div>       
+        
+           <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"></a>
+            <div class="highlight">
+              <pre class="highlight">
+			  <code> 
 <<span class="s2">Resposta DataCriacao=</span>"18/12/2018 14:30:03"</span>>
 <<span class="s2">Produtos</span>>
 <<span class="s2">Produto codigo=</span>"1000069800"<span class="s2"> precoDe=</span>"1.678,32"<span class="s2"> precoPor=</span>"1.398,60"<span class="s2"> disponibilidade=</span>"1" /<span class="s2">></span>
@@ -795,159 +840,410 @@
             </tbody>
         </table>
       </div>
-      <div name="requisição10" data-unique="requisição10"></div>
-      <h3 id="requisição10">Requisição</h3>
+      <div name="request10" data-unique="request10"></div>
+      
 
       <div class="code-fullscreen">
-                <a data-language-name="Request" class="active"></a> </div>      
-          
+                <a data-language-name="Request" class="active"></a> </div>
           <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
             ></a>
-         
             <div class="highlight">
               <pre class="highlight">
         <code>
-          <span class="p">{</span><span class="w">
-</span><span class="nl">"Bandeira"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Extra"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"CorrelationId"</span><span class="p">:</span><span class="w"> </span><span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span><span class="w">
-        </span><span class="nl">"Message"</span><span class="p">:</span><span class="w"> </span>
-        </span><span class="nl">{"Content":"XXXXX”}</span>
-        </span><span class="nl">"}"</span>
-
+        <span class="p">{</span>
+        <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+        <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+        <span class=s2>"Message"</span><span class="p">:</span>
+        <span class=s2>{"Content":"XXXXX”}</span>
+        <span class=s2>}</span>
 </span></code></pre>
 </div>
           </div>
-          
-            <div name="resposta" data-unique="resposta"></div>
-            <h3 id="resposta">Resposta</h3>
-
-
-            <div class="code-fullscreen">       
-                <a data-language-name="Request" class="active"></a></div>
-            
-               <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+               <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
                     ></a>
                   <div class="highlight">
                     <pre class="highlight">
               <code>
-                <span class="p">{</span><span class="w">
-      </span><span class="nl">"Bandeira"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Extra"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"CorrelationId"</span><span class="p">:</span><span class="w"> </span><span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span><span class="w">
-              </span><span class="nl">"Message"</span><span class="p">:</span><span class="w"> </span>
-              </span><span class="nl">{"Content":"XXXXX”}</span>
-              </span><span class="nl">"}"</span>
+         <span class="p">{</span>
+         <span class=s2>"IsValid":True</span>,
+         <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+         <span class=s2>"Message"</span>:[<span class="w">
+                   <span class=s2>{</span>
+                    </span><span class=s2>"Content":"",</span>
+                    </span><span class=s2>"Type": "No Error"</span>
+                   <span class=s2>}</span>
+             </span><span class=s2>]</span>
+         <span class=s2>}</span></span></code></pre></div></div>
+
+         <aside class="warning">
+            Todas mensagens que não responderem nesse padrão, serão consideradas como não entregues. </aside>
+
+
+            <div name="Benefícios" data-unique="Benefícios"></div>
+      <h2 id="Benefícios">Benefícios</h2>
+                    <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                  
       
+      <div name="response10" data-unique="response10"></div>
+      
+
+      <div class="code-fullscreen">
+                <a data-language-name="Request" class="active"></a> </div>
+          <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+            ></a>
+            <div class="highlight">
+              <pre class="highlight">
+        <code>
+        <span class="p">{</span>
+        <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+        <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+        <span class=s2>"Message"</span><span class="p">:</span>
+        <span class=s2>{"Content":"XXXXX”}</span>
+        <span class=s2>}</span>
+</span></code></pre>
+</div>
+          </div>
+               <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                    ></a>
+                  <div class="highlight">
+                    <pre class="highlight">
+              <code>
+         <span class="p">{</span>
+         <span class=s2>"IsValid":True</span>,
+         <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+         <span class=s2>"Message"</span>:[<span class="w">
+                   <span class=s2>{</span>
+                    </span><span class=s2>"Content":"",</span>
+                    </span><span class=s2>"Type": "No Error"</span>
+                   <span class=s2>}</span>
+             </span><span class=s2>]</span>
+         <span class=s2>}</span></span></code></pre></div></div>
+      
+         <div name="Mensageria-Preço-Específico" data-unique="Mensageria-Preço-Específico"></div>
+         <h2 id="Mensageria-Preço-Específico">Preço Específico</h2>
+                       <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                     
+         
+         <div name="requisição10" data-unique="requisição10"></div>
+         
+   
+         <div class="code-fullscreen">
+                   <a data-language-name="Request" class="active"></a> </div>
+             <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+               ></a>
+               <div class="highlight">
+                 <pre class="highlight">
+           <code>
+           <span class="p">{</span>
+           <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+           <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+           <span class=s2>"Message"</span><span class="p">:</span>
+           <span class=s2>{"Content":"XXXXX”}</span>
+           <span class=s2>}</span>
+   </span></code></pre>
+   </div>
+             </div>
+                  <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                       ></a>
+                     <div class="highlight">
+                       <pre class="highlight">
+                 <code>
+            <span class="p">{</span>
+            <span class=s2>"IsValid":True</span>,
+            <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+            <span class=s2>"Message"</span>:[<span class="w">
+                      <span class=s2>{</span>
+                       </span><span class=s2>"Content":"",</span>
+                       </span><span class=s2>"Type": "No Error"</span>
+                      <span class=s2>}</span>
+                </span><span class=s2>]</span>
+            <span class=s2>}</span></span></code></pre></div></div>
+
+
+            <div name="Lojistao" data-unique="Lojista"></div>
+            <h2 id="Lojista">Lojista</h2>
+                          <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                        
+            
+            <div name="requisição10" data-unique="requisição10"></div>
+            
+      
+            <div class="code-fullscreen">
+                      <a data-language-name="Request" class="active"></a> </div>
+                <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                  ></a>
+                  <div class="highlight">
+                    <pre class="highlight">
+              <code>
+              <span class="p">{</span>
+              <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+              <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+              <span class=s2>"Message"</span><span class="p">:</span>
+              <span class=s2>{"Content":"XXXXX”}</span>
+              <span class=s2>}</span>
       </span></code></pre>
-                  </div></div>
-
-
-
-      <div class="table-wrap" style="min-height:1892px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Propriedade</th>
-              <th>Descrição</th>
-              <th>Tipo</th>
-              <th>Tamanho</th>
-              <th>Formato</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code class="highlighter-rouge">AcquirerTransactionId</code></td>
-              <td>Id da transação no provedor de meio de pagamento</td>
-              <td>Texto</td>
-              <td>40</td>
-              <td>Texto alfanumérico</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ProofOfSale</code></td>
-              <td>Número do Comprovante de Venda</td>
-              <td>Texto</td>
-              <td>20</td>
-              <td>Texto alfanumérico</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">AuthorizationCode</code></td>
-              <td>Código de autorização</td>
-              <td>Texto</td>
-              <td>300</td>
-              <td>Texto alfanumérico</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">PaymentId</code></td>
-              <td>Campo Identificador do Pedido</td>
-              <td>Guid</td>
-              <td>36</td>
-              <td>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ReceivedDate</code></td>
-              <td>Data em que a transação foi recebida pela Brapag</td>
-              <td>Texto</td>
-              <td>19</td>
-              <td>AAAA-MM-DD HH:mm:SS</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">CapturedDate</code></td>
-              <td>Data em que a transação foi capturada a transação</td>
-              <td>Texto</td>
-              <td>19</td>
-              <td>AAAA-MM-DD HH:mm:SS</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">CapturedAmount</code></td>
-              <td>Valor capturado (sem pontuação)</td>
-              <td>Número</td>
-              <td>15</td>
-              <td>100 equivale a R$ 1,00</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ECI</code></td>
-              <td>Eletronic Commerce Indicator. Representa o resultado da autenticação</td>
-              <td>Texto</td>
-              <td>2</td>
-              <td>Exemplos: 5</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ReasonCode</code></td>
-              <td>Código de retorno da Operação</td>
-              <td>Texto</td>
-              <td>32</td>
-              <td>Texto alfanumérico</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ReasonMessage</code></td>
-              <td>Mensagem de retorno da Operação</td>
-              <td>Texto</td>
-              <td>512</td>
-              <td>Texto alfanumérico</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">Status</code></td>
-              <td>Status da Transação</td>
-              <td>Byte</td>
-              <td>2</td>
-              <td>Ex. 1</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ProviderReturnCode</code></td>
-              <td>Código retornado pelo provedor do meio de pagamento (adquirente e bancos)</td>
-              <td>Texto</td>
-              <td>32</td>
-              <td>57</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ProviderReturnMessage</code></td>
-              <td>Mensagem retornada pelo provedor do meio de pagamento (adquirente e bancos)</td>
-              <td>Texto</td>
-              <td>512</td>
-              <td>Transação Aprovada</td>
-            </tr>
-          </tbody>
-        </table>
       </div>
+                </div>
+                     <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                          ></a>
+                        <div class="highlight">
+                          <pre class="highlight">
+                    <code>
+               <span class="p">{</span>
+               <span class=s2>"IsValid":True</span>,
+               <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+               <span class=s2>"Message"</span>:[<span class="w">
+                         <span class=s2>{</span>
+                          </span><span class=s2>"Content":"",</span>
+                          </span><span class=s2>"Type": "No Error"</span>
+                         <span class=s2>}</span>
+                   </span><span class=s2>]</span>
+               <span class=s2>}</span></span></code></pre></div></div>
+
+               <div name="Mensageria-Categoria" data-unique="Mensageria-Categoria"></div>
+               <h2 id="Categoria">Categoria</h2>
+                             <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                           
+               
+               <div name="requisição10" data-unique="requisição10"></div>
+               
+         
+               <div class="code-fullscreen">
+                         <a data-language-name="Request" class="active"></a> </div>
+                   <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                     ></a>
+                     <div class="highlight">
+                       <pre class="highlight">
+                 <code>
+                 <span class="p">{</span>
+                 <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+                 <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+                 <span class=s2>"Message"</span><span class="p">:</span>
+                 <span class=s2>{"Content":"XXXXX”}</span>
+                 <span class=s2>}</span>
+         </span></code></pre>
+         </div>
+                   </div>
+                        <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                             ></a>
+                           <div class="highlight">
+                             <pre class="highlight">
+                       <code>
+                  <span class="p">{</span>
+                  <span class=s2>"IsValid":True</span>,
+                  <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+                  <span class=s2>"Message"</span>:[<span class="w">
+                            <span class=s2>{</span>
+                             </span><span class=s2>"Content":"",</span>
+                             </span><span class=s2>"Type": "No Error"</span>
+                            <span class=s2>}</span>
+                      </span><span class=s2>]</span>
+                  <span class=s2>}</span></span></code></pre></div></div>
+
+                  <div name="Mensageria-ProdutoParcial" data-unique="Mensageria-ProdutoParcial"></div>
+      <h2 id="Mensageria-ProdutoParcial">Produto Parcial</h2>
+                    <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                  
+     
+      <div name="requisição10" data-unique="requisição10"></div>
+      
+
+      <div class="code-fullscreen">
+                <a data-language-name="Request" class="active"></a> </div>
+          <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+            ></a>
+            <div class="highlight">
+              <pre class="highlight">
+        <code>
+        <span class="p">{</span>
+        <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+        <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+        <span class=s2>"Message"</span><span class="p">:</span>
+        <span class=s2>{"Content":"XXXXX”}</span>
+        <span class=s2>}</span>
+</span></code></pre>
+</div>
+          </div>
+               <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                    ></a>
+                  <div class="highlight">
+                    <pre class="highlight">
+              <code>
+         <span class="p">{</span>
+         <span class=s2>"IsValid":True</span>,
+         <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+         <span class=s2>"Message"</span>:[<span class="w">
+                   <span class=s2>{</span>
+                    </span><span class=s2>"Content":"",</span>
+                    </span><span class=s2>"Type": "No Error"</span>
+                   <span class=s2>}</span>
+             </span><span class=s2>]</span>
+         <span class=s2>}</span></span></code></pre></div></div>
+
+         <div name="Mensageria-Estoque" data-unique="Mensageria-Estoque"></div>
+         <h2 id="Mensageria-Estoque">Estoque</h2>
+                       <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                     
+        
+         <div name="requisição10" data-unique="requisição10"></div>
+         
+   
+         <div class="code-fullscreen">
+                   <a data-language-name="Request" class="active"></a> </div>
+             <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+               ></a>
+               <div class="highlight">
+                 <pre class="highlight">
+           <code>
+           <span class="p">{</span>
+           <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+           <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+           <span class=s2>"Message"</span><span class="p">:</span>
+           <span class=s2>{"Content":"XXXXX”}</span>
+           <span class=s2>}</span>
+   </span></code></pre>
+   </div>
+             </div>
+                  <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                       ></a>
+                     <div class="highlight">
+                       <pre class="highlight">
+                 <code>
+            <span class="p">{</span>
+            <span class=s2>"IsValid":True</span>,
+            <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+            <span class=s2>"Message"</span>:[<span class="w">
+                      <span class=s2>{</span>
+                       </span><span class=s2>"Content":"",</span>
+                       </span><span class=s2>"Type": "No Error"</span>
+                      <span class=s2>}</span>
+                </span><span class=s2>]</span>
+            <span class=s2>}</span></span></code></pre></div></div>
+
+            <div name="Tracking" data-unique="Tracking"></div>
+         <h2 id="Tracking">Tracking</h2>
+                       <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                     
+        
+         <div name="requisição10" data-unique="requisição10"></div>
+         
+   
+         <div class="code-fullscreen">
+                   <a data-language-name="Request" class="active"></a> </div>
+             <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+               ></a>
+               <div class="highlight">
+                 <pre class="highlight">
+           <code>
+           <span class="p">{</span>
+           <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+           <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+           <span class=s2>"Message"</span><span class="p">:</span>
+           <span class=s2>{"Content":"XXXXX”}</span>
+           <span class=s2>}</span>
+   </span></code></pre>
+   </div>
+             </div>
+                  <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                       ></a>
+                     <div class="highlight">
+                       <pre class="highlight">
+                 <code>
+            <span class="p">{</span>
+            <span class=s2>"IsValid":True</span>,
+            <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+            <span class=s2>"Message"</span>:[<span class="w">
+                      <span class=s2>{</span>
+                       </span><span class=s2>"Content":"",</span>
+                       </span><span class=s2>"Type": "No Error"</span>
+                      <span class=s2>}</span>
+                </span><span class=s2>]</span>
+            <span class=s2>}</span></span></code></pre></div></div>
+
+            <div name="DisponibilidadePreço" data-unique="DisponibilidadePreço"></div>
+         <h2 id="DisponibilidadePreço">Disponibilidade e Preço</h2>
+                       <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                     
+        
+         <div name="requisição10" data-unique="requisição10"></div>
+         
+   
+         <div class="code-fullscreen">
+                   <a data-language-name="Request" class="active"></a> </div>
+             <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+               ></a>
+               <div class="highlight">
+                 <pre class="highlight">
+           <code>
+           <span class="p">{</span>
+           <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+           <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+           <span class=s2>"Message"</span><span class="p">:</span>
+           <span class=s2>{"Content":"XXXXX”}</span>
+           <span class=s2>}</span>
+   </span></code></pre>
+   </div>
+             </div>
+                  <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                       ></a>
+                     <div class="highlight">
+                       <pre class="highlight">
+                 <code>
+            <span class="p">{</span>
+            <span class=s2>"IsValid":True</span>,
+            <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+            <span class=s2>"Message"</span>:[<span class="w">
+                      <span class=s2>{</span>
+                       </span><span class=s2>"Content":"",</span>
+                       </span><span class=s2>"Type": "No Error"</span>
+                      <span class=s2>}</span>
+                </span><span class=s2>]</span>
+            <span class=s2>}</span></span></code></pre></div></div>
+
+            <div name="Campanha" data-unique="Campanha"></div>
+            <h2 id="Campanha">Campanha</h2>
+                          <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
+                        
+           
+            <div name="requisição10" data-unique="requisição10"></div>
+            
+      
+            <div class="code-fullscreen">
+                      <a data-language-name="Request" class="active"></a> </div>
+                <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
+                  ></a>
+                  <div class="highlight">
+                    <pre class="highlight">
+              <code>
+              <span class="p">{</span>
+              <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
+              <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
+              <span class=s2>"Message"</span><span class="p">:</span>
+              <span class=s2>{"Content":"XXXXX”}</span>
+              <span class=s2>}</span>
+      </span></code></pre>
+      </div>
+                </div>
+                     <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
+                          ></a>
+                        <div class="highlight">
+                          <pre class="highlight">
+                    <code>
+               <span class="p">{</span>
+               <span class=s2>"IsValid":True</span>,
+               <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
+               <span class=s2>"Message"</span>:[<span class="w">
+                         <span class=s2>{</span>
+                          </span><span class=s2>"Content":"",</span>
+                          </span><span class=s2>"Type": "No Error"</span>
+                         <span class=s2>}</span>
+                   </span><span class=s2>]</span>
+               <span class=s2>}</span></span></code></pre></div></div>
+
+
+
+
+
 
       <div name="capturando-uma-transação" data-unique="capturando-uma-transação"></div>
       <h3 id="capturando-uma-transação">Capturando uma transação</h3>
@@ -17974,7 +18270,7 @@ curl
                       <li class="tocify-item" data-unique="ambiente-Homologação"><a>Ambiente Homologação</a></li>
                       <li class="tocify-item" data-unique="ambiente-de-produção"><a>Ambiente de Produção</a></li>
                   </ul>
-                  <li class="tocify-item" data-unique="suporte-braspag"><a>Suporte ViaVarejo</a></li>
+                  <li class="tocify-item" data-unique="suporte-ViaVarejo"><a>Suporte ViaVarejo</a></li>
                   <li class="tocify-item" data-unique="características-da-solução"><a>Características da Solução</a></li>
                   <li class="tocify-item" data-unique="arquitetura"><a>Arquitetura</a></li>
               </ul>
@@ -17995,11 +18291,17 @@ curl
                       
                       <li class="tocify-item has-subitens" data-unique="Request-Padrão"><a>Request Padrão</a></li>
                       <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
-                          <li class="tocify-item" data-unique="requisição10"><a>Requisição</a></li>
-                          <li class="tocify-item" data-unique="resposta10"><a>Resposta</a></li>
+                          <li class="tocify-item" data-unique="request10"><a>Requisição</a></li>
+                          <li class="tocify-item" data-unique="request10"><a>Resposta</a></li>
                       </ul>
-                      <li class="tocify-item" data-unique="conciliação-de-boletos"><a>Conciliação de Boletos</a></li>
-                      <li class="tocify-item" data-unique="tabela-de-especificação-de-quantidade-de-caracteres-do-campo-por-provider"><a>Tabela de Especificação de quantidade de caracteres do campo por Provider</a></li>
+                      <li class="tocify-item" data-unique="Benefícios"><a>Benefícios</a></li>
+                      <li class="tocify-item" data-unique="Mensageria-Preço-Específico"><a>Preço específico</a></li>
+                      <li class="tocify-item" data-unique="Lojista"><a>Lojista</a></li>
+                      <li class="tocify-item" data-unique="Mensageria-Categoria"><a>Categoria</a></li>
+                      <li class="tocify-item" data-unique="Mensageria-ProdutoParcial"><a>Produto Parcial</a></li>
+                      <li class="tocify-item" data-unique="Mensageria-Estoque"><a>Estoque</a></li>
+                      <li class="tocify-item" data-unique="Tracking"><a>Tracking</a></li>
+                      <li class="tocify-item" data-unique="DisponibilidadePreço"><a>DisponibilidadePreço</a></li>
                   </ul>
                   <li class="tocify-item has-subitens" data-unique="recorrência"><a>Recorrência</a></li>
                   <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
