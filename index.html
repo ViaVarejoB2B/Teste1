@@ -548,7 +548,7 @@
                         <div class="highlight">
                           <pre class="highlight">
                     <code>
-                        $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Categoria?idParceiro=13 -o Categoria.zip
+$ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Categoria?idParceiro=13 -o Categoria.zip
             
                     </code></pre>
             </div>
@@ -620,7 +620,7 @@
             <div class="highlight">
               <pre class="highlight">
         <code>
-            $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Estoque?idParceiro=13 -o Estoque.zip
+$ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Estoque?idParceiro=13 -o Estoque.zip
 
         </code></pre>
 </div>
@@ -691,7 +691,7 @@
             <div class="highlight">
               <pre class="highlight">
         <code>
-            $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParceiro=13 -o Disponibilidade.zip
+$ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParceiro=13 -o Disponibilidade.zip
 
         </code></pre>
 </div>
@@ -874,27 +874,27 @@
                  <pre class="highlight">
            <code>
 
-              {
-                "CorrelationId": "6dc0d677-3cd2-49bf-bb91-2170f36a264c",
-                "Topic": null,
-                "Key": null,
-                "Bandeira": "Extra",
-                "Token": null,
-                "Message": {
-                    "Content": "{
-                    "Skus
-                    ":[{
-                    "Codigo": 5104,
-                    "PrecoDe": 65.2,
-                    "PrecoPor": 25.96,
-                    "Disponibilidade": 1,
-                    "IdCampanha": 2274,
-                    "IdLojista": 15,
-                    "TiposEntrega": null
-                }]
-            }
-            "}
-            }                      
+{
+    "CorrelationId": "6dc0d677-3cd2-49bf-bb91-2170f36a264c",
+    "Topic": null,
+    "Key": null,
+    "Bandeira": "Extra",
+    "Token": null,
+    "Message": {
+        "Content": "{
+        "Skus
+        ":[{
+        "Codigo": 5104,
+        "PrecoDe": 65.2,
+        "PrecoPor": 25.96,
+        "Disponibilidade": 1,
+        "IdCampanha": 2274,
+        "IdLojista": 15,
+        "TiposEntrega": null
+    }]
+}
+"}
+}                      
           
           </code></pre>
    </div>
@@ -914,7 +914,62 @@
                       <span class=s2>}</span>
                 </span><span class=s2>]</span>
             <span class=s2>}</span></span></code></pre></div></div>
-
+            <table>
+                <thead>
+                  <tr>
+                    <th>Propriedade</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code class="highlighter-rouge">Bandeira</code></td>
+                    <td>Texto</td>
+                    <td>Identificação da Bandeira</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">CorrelationId</code></td>
+                    <td>Guid</td>
+                    <td>Identificação da mensagem de ponta a ponta</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Message.Content</code></td>
+                    <td>Texto</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.Codigo</code></td>
+                    <td>Número</td>
+                    <td>Código do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
+                    <td>Número</td>
+                    <td>Preco De do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
+                    <td>Número</td>
+                    <td>Preco Por do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
+                    <td>Número</td>
+                    <td>Disponibilidade do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
+                    <td>Número</td>
+                    <td>Id da campanha</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
+                    <td>Número</td>
+                    <td>Id do lojista</td>
+                    </tr>
+                </tbody>
+              </table>
 
             <div name="Lojistao" data-unique="Lojista"></div>
             <h2 id="Lojista">Lojista</h2>
@@ -963,7 +1018,62 @@
                          <span class=s2>}</span>
                    </span><span class=s2>]</span>
                <span class=s2>}</span></span></code></pre></div></div>
-
+               <table>
+                  <thead>
+                    <tr>
+                      <th>Propriedade</th>
+                      <th>Tipo</th>
+                      <th>Descrição</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><code class="highlighter-rouge">Bandeira</code></td>
+                      <td>Texto</td>
+                      <td>Identificação da Bandeira</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">CorrelationId</code></td>
+                      <td>Guid</td>
+                      <td>Identificação da mensagem de ponta a ponta</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Message.Content</code></td>
+                      <td>Texto</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Skus.Codigo</code></td>
+                      <td>Número</td>
+                      <td>Código do sku</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
+                      <td>Número</td>
+                      <td>Preco De do sku</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
+                      <td>Número</td>
+                      <td>Preco Por do sku</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
+                      <td>Número</td>
+                      <td>Disponibilidade do sku</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
+                      <td>Número</td>
+                      <td>Id da campanha</td>
+                    </tr>
+                    <tr>
+                      <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
+                      <td>Número</td>
+                      <td>Id do lojista</td>
+                      </tr>
+                  </tbody>
+                </table>
                <div name="Mensageria-Categoria" data-unique="Mensageria-Categoria"></div>
                <h2 id="Categoria">Categoria</h2>
                              <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
@@ -978,42 +1088,74 @@
                      ></a>
                      <div class="highlight">
                        <pre class="highlight">
-                 <code>
-                    {
-                      "Bandeira": "Extra",
-                      "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-                      "Message": {
-                          "Content": "{
-                          "Categorias": [{
-                                  "Codigo": 45,
-                                  "Level": 1,
-                                  "Nome": "Livre Embratel|45",
-                                  "IdDepartamento": 38,
-                                  "NomeDepartamento": "TelefoniaFixa",
-                                  "IdCategoriaPai": 327,
-                                  "NomeCategoriaPai": "TelefoniaFixa"
-                              },
-                              {
-                                  "Codigo": 300,
-                                  "Level": 1,
-                                  "Nome": "Talheres Descartáveis|300",
-                                  "IdDepartamento": 2894,
-                                  "NomeDepartamento": "artigosdescartaveis",
-                                  "IdCategoriaPai": 3295,
-                                  "NomeCategoriaPai": "artigosdescartaveis
-                                  "},{
-                                  "Codigo": 402,
-                                  "Level": 1,
-                                  "Nome": "Jogos Zeebo|402",
-                                  "IdDepartamento": 336,
-                                  "NomeDepartamento": "Zeebo",
-                                  IdCategoriaPai ":400,
-                                  "NomeCategoriaPai": "Zeebo
-                                  "}]}"
-                              }
-                          }
+<code>
+{
+    "Bandeira": "Extra",
+    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+    "Message": {
+        "Content": "{
+        "Categorias": [{
+                    "Codigo": 45,
+                    "Level": 1,
+                    "Nome": "Livre Embratel|45",
+                    "IdDepartamento": 38,
+                    "NomeDepartamento": "TelefoniaFixa",
+                    "IdCategoriaPai": 327,
+                    "NomeCategoriaPai": "TelefoniaFixa"
+                },
+                {
+                    "Codigo": 300,
+                    "Level": 1,
+                    "Nome": "Talheres Descartáveis|300",
+                    "IdDepartamento": 2894,
+                    "NomeDepartamento": "artigosdescartaveis",
+                    "IdCategoriaPai": 3295,
+                    "NomeCategoriaPai": "artigosdescartaveis
+                    "},{
+                    "Codigo": 402,
+                    "Level": 1,
+                    "Nome": "Jogos Zeebo|402",
+                    "IdDepartamento": 336,
+                    "NomeDepartamento": "Zeebo",
+                    IdCategoriaPai ":400,
+                    "NomeCategoriaPai": "Zeebo
+                    "}]}"
+                }
+            } {
+                "Bandeira": "Extra",
+                "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+                "Message": {
+                    "Content": "{
+                    "Categorias": [{
+                            "Codigo": 45,
+                            "Level": 1,
+                            "Nome": "Livre Embratel|45",
+                            "IdDepartamento": 38,
+                            "NomeDepartamento": "TelefoniaFixa",
+                            "IdCategoriaPai": 327,
+                            "NomeCategoriaPai": "TelefoniaFixa"
+                        },
+                        {
+                            "Codigo": 300,
+                            "Level": 1,
+                            "Nome": "Talheres Descartáveis|300",
+                            "IdDepartamento": 2894,
+                            "NomeDepartamento": "artigosdescartaveis",
+                            "IdCategoriaPai": 3295,
+                            "NomeCategoriaPai": "artigosdescartaveis
+                            "},{
+                            "Codigo": 402,
+                            "Level": 1,
+                            "Nome": "Jogos Zeebo|402",
+                            "IdDepartamento": 336,
+                            "NomeDepartamento": "Zeebo",
+                            IdCategoriaPai ":400,
+                            "NomeCategoriaPai": "Zeebo
+                            "}]}"
+                        }
+                    }
                      
-                </code></pre>
+</code></pre>
          </div>
                    </div>
                         <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
@@ -1031,7 +1173,62 @@
                             <span class=s2>}</span>
                       </span><span class=s2>]</span>
                   <span class=s2>}</span></span></code></pre></div></div>
-
+                  <table>
+                      <thead>
+                        <tr>
+                          <th>Propriedade</th>
+                          <th>Tipo</th>
+                          <th>Descrição</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code class="highlighter-rouge">Bandeira</code></td>
+                          <td>Texto</td>
+                          <td>Identificação da Bandeira</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">CorrelationId</code></td>
+                          <td>Guid</td>
+                          <td>Identificação da mensagem de ponta a ponta</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Message.Content</code></td>
+                          <td>Texto</td>
+                          <td>15</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Skus.Codigo</code></td>
+                          <td>Número</td>
+                          <td>Código do sku</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
+                          <td>Número</td>
+                          <td>Preco De do sku</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
+                          <td>Número</td>
+                          <td>Preco Por do sku</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
+                          <td>Número</td>
+                          <td>Disponibilidade do sku</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
+                          <td>Número</td>
+                          <td>Id da campanha</td>
+                        </tr>
+                        <tr>
+                          <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
+                          <td>Número</td>
+                          <td>Id do lojista</td>
+                          </tr>
+                      </tbody>
+                    </table>
                   <div name="Mensageria-ProdutoParcial" data-unique="Mensageria-ProdutoParcial"></div>
       <h2 id="Mensageria-ProdutoParcial">Produto Parcial</h2>
                     <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
@@ -1047,118 +1244,118 @@
             <div class="highlight">
               <pre class="highlight">
         <code>
-            {
-              "Bandeira": "Extra",
-              "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-              "Message": {
-                  "Content": "{
-                  "Produtos": [{
-                      "Codigo": 8275547,
-                      "DisplayName": "Smartphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5",
-                      Dual Chip,
-                      Câmera Traseira Dupla,
-                      Android 7.0,
-                      Processador Quad Core e 2 GB RAM ","
-                      DescricaoLonga ":" < p > O < strong > ZenFone 4 Max DTV < /strong> é um parelho completo, que une a qualidade de um televisor com à mobilidade do celular.</p >
-                      ","
-                      IdCategoria ":3266,"
-                      CodigoFabricante ":645,"
-                      NomeFabricante ":
-                      "Asus",
-                      "FotoPequena": 863934947,
-                      "FotoMedia": 863934951,
-                      "FotoGrande": 863934954,
-                      "PalavraChave": "martphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5",
-                      Dual Chip,
-                      Câmera Traseira Dupla,
-                      Android 7.0,
-                      Processador Quad Core e 2 GB RAM Asus,
-                      Android,
-                      Smartphones,
-                      Telefones e Celulares ","
-                      MaisVendidos ":8,
-                      "Skus": [{
-                          "IdSku": 11823957,
-                          "Preco": 0.00,
-                          "UltimaModificacao": "2018-01-19T16:52:12.56",
-                          "Habilitado": true,
-                          "Modelo": ".",
-                          "EAN": "7898573295274",
-                          "Imagens": [{
-                              "ImageMenor": 863934955,
-                              "ImagemMaior": 863934958,
-                              "ImagemZoom": 863934962,
-                              "Ordem": 1,
-                              "ImagemMedia": null
-                          }],
-                          "Ordem": null
-                      }],
-                      "FichaTecnica": {
-                          "Grupos": [{
-                              "Itens": [{
-                                  "Descricao": "Resolução câmera frontal",
-                                  "Valor": "De 5.0 a 8.9 MP"
-                              }],
-                              "Codigo": 514,
-                              "Nome": "Especificações Técnicas"
-                          }]
-                      },
-                      "FotoZoom": null,
-                      "OrdemImagem": 0,
-                      "PermaLink": "smartphone-asus-zenfone-4-max-dtv-zc554kl-preto-com-16gb-tela-5-5-dual-chip-camera-traseira-dupla-android-7-0-processador-quad-core-e-2gb-ram-8275547            ",
-                      "PermaLinkCategoria": "android",
-                      "PermaLinkFabricante": "asus",
-                      "NomeCategoria": "Android"
-                  }, {
-                      "Codigo": 8154832,
-                      "DisplayName": "Smartphone Motorola Moto G5s XT1792 Ouro com 32GB, Tela de 5.2`. 
-                      O acabamento metálico,
-                      além de deixar o celular mais resistente lhe confere muita sofisticação. < /p>",
-                      "IdCategoria": 3266,
-                      "CodigoFabricante": 356,
-                      "NomeFabricante": "Motorola",
-                      "FotoPequena": 856378530,
-                      "FotoMedia": 856378534,
-                      "FotoGrande": 856378537,
-                      "PalavraChave": "martphone Motorola Moto G5 S XT1792 Ouro com 32GB, Tela de 5.2``, Dual Chip, Android 7.1, 4G, Câmera 16MP, Processador Octa-Core e 2GB de RAM  <
-                          p > A < strong > família Moto G < /strong> cresceu e traz o novíssimo",
-                      "MaisVendidos": 3032,
-                      "Skus": [{
-                          "IdSku": 11700720,
-                          "Preco": 0.00,
-                          "UltimaModificacao": "2018-01-19T17:03:42.593",
-                          "Habilitado": true,
-                          "Modelo": ".",
-                          "EAN": "7892597340927",
-                          "Imagens": [{
-                              "ImageMenor": 856378538,
-                              "ImagemMaior": 856378541,
-                              "ImagemZoom": 856378545,
-                              "Ordem": 1,
-                              "ImagemMedia": null
-                          }],
-                          "Ordem": null
-                      }],
-                      "FichaTecnica": {
-                          "Grupos": [{
-                              "Itens": [{
-                                  "Descricao": "Resolução câmera frontal",
-                                  "Valor": "De 5.0 a 8.9 MP"
-                              }],
-                              "Codigo": 514,
-                              "Nome": "Especificações Técnicas"
-                          }]
-                      },
-                      "FotoZoom": null,
-                      "OrdemImagem": 0,
-                      "PermaLink": "smartphone-motorola-moto-g5s-xt1792-ouro-com-32gb-tela-de-5-2-dual-chip-android-7-1-4g-camera-16mp-processador-octa-core-e-2gb-de-ram-8154832",
-                      "PermaLinkCategoria": "android",
-                      "PermaLinkFabricante": "motorola",
-                      "NomeCategoria": "Android"
-                  }]
-              }
-              "}
-          }
+{
+    "Bandeira": "Extra",
+    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+    "Message": {
+        "Content": "{
+        "Produtos": [{
+            "Codigo": 8275547,
+            "DisplayName": "Smartphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5",
+            Dual Chip,
+            Câmera Traseira Dupla,
+            Android 7.0,
+            Processador Quad Core e 2 GB RAM ","
+            DescricaoLonga ":" < p > O < strong > ZenFone 4 Max DTV < /strong> é um parelho completo, que une a qualidade de um televisor com à mobilidade do celular.</p >
+            ","
+            IdCategoria ":3266,"
+            CodigoFabricante ":645,"
+            NomeFabricante ":
+            "Asus",
+            "FotoPequena": 863934947,
+            "FotoMedia": 863934951,
+            "FotoGrande": 863934954,
+            "PalavraChave": "martphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5",
+            Dual Chip,
+            Câmera Traseira Dupla,
+            Android 7.0,
+            Processador Quad Core e 2 GB RAM Asus,
+            Android,
+            Smartphones,
+            Telefones e Celulares ","
+            MaisVendidos ":8,
+            "Skus": [{
+                "IdSku": 11823957,
+                "Preco": 0.00,
+                "UltimaModificacao": "2018-01-19T16:52:12.56",
+                "Habilitado": true,
+                "Modelo": ".",
+                "EAN": "7898573295274",
+                "Imagens": [{
+                    "ImageMenor": 863934955,
+                    "ImagemMaior": 863934958,
+                    "ImagemZoom": 863934962,
+                    "Ordem": 1,
+                    "ImagemMedia": null
+                }],
+                "Ordem": null
+            }],
+            "FichaTecnica": {
+                "Grupos": [{
+                    "Itens": [{
+                        "Descricao": "Resolução câmera frontal",
+                        "Valor": "De 5.0 a 8.9 MP"
+                    }],
+                    "Codigo": 514,
+                    "Nome": "Especificações Técnicas"
+                }]
+            },
+            "FotoZoom": null,
+            "OrdemImagem": 0,
+            "PermaLink": "smartphone-asus-zenfone-4-max-dtv-zc554kl-preto-com-16gb-tela-5-5-dual-chip-camera-traseira-dupla-android-7-0-processador-quad-core-e-2gb-ram-8275547            ",
+            "PermaLinkCategoria": "android",
+            "PermaLinkFabricante": "asus",
+            "NomeCategoria": "Android"
+        }, {
+            "Codigo": 8154832,
+            "DisplayName": "Smartphone Motorola Moto G5s XT1792 Ouro com 32GB, Tela de 5.2`. 
+            O acabamento metálico,
+            além de deixar o celular mais resistente lhe confere muita sofisticação. < /p>",
+            "IdCategoria": 3266,
+            "CodigoFabricante": 356,
+            "NomeFabricante": "Motorola",
+            "FotoPequena": 856378530,
+            "FotoMedia": 856378534,
+            "FotoGrande": 856378537,
+            "PalavraChave": "martphone Motorola Moto G5 S XT1792 Ouro com 32GB, Tela de 5.2``, Dual Chip, Android 7.1, 4G, Câmera 16MP, Processador Octa-Core e 2GB de RAM  <
+            p > A < strong > família Moto G < /strong> cresceu e traz o novíssimo",
+            "MaisVendidos": 3032,
+            "Skus": [{
+                "IdSku": 11700720,
+                "Preco": 0.00,
+                "UltimaModificacao": "2018-01-19T17:03:42.593",
+                "Habilitado": true,
+                "Modelo": ".",
+                "EAN": "7892597340927",
+                "Imagens": [{
+                    "ImageMenor": 856378538,
+                    "ImagemMaior": 856378541,
+                    "ImagemZoom": 856378545,
+                    "Ordem": 1,
+                    "ImagemMedia": null
+                }],
+                "Ordem": null
+            }],
+            "FichaTecnica": {
+                "Grupos": [{
+                    "Itens": [{
+                        "Descricao": "Resolução câmera frontal",
+                        "Valor": "De 5.0 a 8.9 MP"
+                    }],
+                    "Codigo": 514,
+                    "Nome": "Especificações Técnicas"
+                }]
+            },
+            "FotoZoom": null,
+            "OrdemImagem": 0,
+            "PermaLink": "smartphone-motorola-moto-g5s-xt1792-ouro-com-32gb-tela-de-5-2-dual-chip-android-7-1-4g-camera-16mp-processador-octa-core-e-2gb-de-ram-8154832",
+            "PermaLinkCategoria": "android",
+            "PermaLinkFabricante": "motorola",
+            "NomeCategoria": "Android"
+        }]
+    }
+    "}
+}
             
             
         </code></pre>
@@ -1179,7 +1376,62 @@
                    <span class=s2>}</span>
              </span><span class=s2>]</span>
          <span class=s2>}</span></span></code></pre></div></div>
-
+         <table>
+            <thead>
+              <tr>
+                <th>Propriedade</th>
+                <th>Tipo</th>
+                <th>Descrição</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code class="highlighter-rouge">Bandeira</code></td>
+                <td>Texto</td>
+                <td>Identificação da Bandeira</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">CorrelationId</code></td>
+                <td>Guid</td>
+                <td>Identificação da mensagem de ponta a ponta</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Message.Content</code></td>
+                <td>Texto</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Skus.Codigo</code></td>
+                <td>Número</td>
+                <td>Código do sku</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
+                <td>Número</td>
+                <td>Preco De do sku</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
+                <td>Número</td>
+                <td>Preco Por do sku</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
+                <td>Número</td>
+                <td>Disponibilidade do sku</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
+                <td>Número</td>
+                <td>Id da campanha</td>
+              </tr>
+              <tr>
+                <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
+                <td>Número</td>
+                <td>Id do lojista</td>
+                </tr>
+            </tbody>
+          </table>
          <div name="Mensageria-Estoque" data-unique="Mensageria-Estoque"></div>
          <h2 id="Mensageria-Estoque">Estoque</h2>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
@@ -1195,27 +1447,27 @@
                <div class="highlight">
                  <pre class="highlight">
            <code>
-              {
-                "Bandeira": "AOC",
-                "CorrelationId": "f0298bbc-c0e4-4784-9269-b2d85b61fa55",
-                "Message": {
-                    "Content": "{
-                    "Estoques
-                    ":[{
-                    "IdSku": 295742,
-                    "IdLojista": 31897,
-                    "FlagSkuSaldoDisponivel": true,
-                    "SaldoEstoque": 7000000,
-                    "DataUltimaAtualizacao": "2018-08-03T12:20:01,{
-                    "IdSku": 13193400,
-                    "IdLojista": 31897,
-                    "FlagSkuSaldoDisponivel": true,
-                    "SaldoEstoque": 14,
-                    "DataUltimaAtualizacao": "2018-08-03T12:20:01"
-                }]
-            }
-            "}
-            }
+{
+    "Bandeira": "Pontofrio",
+    "CorrelationId": "f0298bbc-c0e4-4784-9269-b2d85b61fa55",
+    "Message": {
+        "Content": "{
+        "Estoques
+        ":[{
+        "IdSku": 295742,
+        "IdLojista": 31897,
+        "FlagSkuSaldoDisponivel": true,
+        "SaldoEstoque": 7000000,
+        "DataUltimaAtualizacao": "2018-08-03T12:20:01,{
+        "IdSku": 13193400,
+        "IdLojista": 31897,
+        "FlagSkuSaldoDisponivel": true,
+        "SaldoEstoque": 14,
+        "DataUltimaAtualizacao": "2018-08-03T12:20:01"
+    }]
+}
+"}
+}
                 
           </code></pre>
    </div>
@@ -1235,7 +1487,62 @@
                       <span class=s2>}</span>
                 </span><span class=s2>]</span>
             <span class=s2>}</span></span></code></pre></div></div>
-
+            <table>
+                <thead>
+                  <tr>
+                    <th>Propriedade</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code class="highlighter-rouge">Bandeira</code></td>
+                    <td>Texto</td>
+                    <td>Identificação da Bandeira</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">CorrelationId</code></td>
+                    <td>Guid</td>
+                    <td>Identificação da mensagem de ponta a ponta</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Message.Content</code></td>
+                    <td>Texto</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.Codigo</code></td>
+                    <td>Número</td>
+                    <td>Código do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
+                    <td>Número</td>
+                    <td>Preco De do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
+                    <td>Número</td>
+                    <td>Preco Por do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
+                    <td>Número</td>
+                    <td>Disponibilidade do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
+                    <td>Número</td>
+                    <td>Id da campanha</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
+                    <td>Número</td>
+                    <td>Id do lojista</td>
+                    </tr>
+                </tbody>
+              </table>
             <div name="Tracking" data-unique="Tracking"></div>
          <h2 id="Tracking">Tracking</h2>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
@@ -1251,27 +1558,27 @@
                <div class="highlight">
                  <pre class="highlight">
            <code>
-              {
-                "Bandeira": "Extra",
-                "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-                "Message": {
-                    "Content": "{
-                    "Trackings": [{
-                        "IdCompra": 0,
-                        "StatusCompra": null,
-                        "IdPedidoParceiro": null,
-                        "IdParceiro": 0,
-                        "IdCampanha": 0,
-                        "DataPedidoParceiro": "0001-01-01T00:00:00",
-                        "IdContrato": 0,
-                        "Cnpj": null,
-                        "IdCanalVenda": null,
-                        "CodigoRastreio": null,
-                        "Transportadora": null
-                    }]
-                }
-                "}
-            }
+{
+    "Bandeira": "Extra",
+    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+    "Message": {
+        "Content": "{
+        "Trackings": [{
+            "IdCompra": 0,
+            "StatusCompra": null,
+            "IdPedidoParceiro": null,
+            "IdParceiro": 0,
+            "IdCampanha": 0,
+            "DataPedidoParceiro": "0001-01-01T00:00:00",
+            "IdContrato": 0,
+            "Cnpj": null,
+            "IdCanalVenda": null,
+            "CodigoRastreio": null,
+            "Transportadora": null
+        }]
+    }
+    "}
+}
                
           </code></pre>
    </div>
@@ -1291,7 +1598,62 @@
                       <span class=s2>}</span>
                 </span><span class=s2>]</span>
             <span class=s2>}</span></span></code></pre></div></div>
-
+            <table>
+                <thead>
+                  <tr>
+                    <th>Propriedade</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code class="highlighter-rouge">Bandeira</code></td>
+                    <td>Texto</td>
+                    <td>Identificação da Bandeira</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">CorrelationId</code></td>
+                    <td>Guid</td>
+                    <td>Identificação da mensagem de ponta a ponta</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Message.Content</code></td>
+                    <td>Texto</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.Codigo</code></td>
+                    <td>Número</td>
+                    <td>Código do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
+                    <td>Número</td>
+                    <td>Preco De do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
+                    <td>Número</td>
+                    <td>Preco Por do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
+                    <td>Número</td>
+                    <td>Disponibilidade do sku</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
+                    <td>Número</td>
+                    <td>Id da campanha</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
+                    <td>Número</td>
+                    <td>Id do lojista</td>
+                    </tr>
+                </tbody>
+              </table>
             <div name="DisponibilidadePreço" data-unique="DisponibilidadePreço"></div>
          <h2 id="DisponibilidadePreço">Disponibilidade e Preço</h2>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
@@ -1307,30 +1669,30 @@
                <div class="highlight">
                  <pre class="highlight">
            <code>
-              {
-                "Bandeira": "Extra",
-                "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-                "Message": {
-                    "Content": "{
-                    "Skus": [{
-                        "Codigo": 8477,
-                        "PrecoDe": 113.7400,
-                        "PrecoPor": 96.7500,
-                        "Disponibilidade": 1,
-                        "IdCampanha": 55,
-                        "IdLojista": 15
-                    }, {
-                        "Codigo": 8507,
-                        "PrecoDe": 1999.0000,
-                        "PrecoPor": 1399.3000,
-                        "Disponibilidade": 1,
-                        "IdCampanha": 55,
-                        "IdLojista": 15
-                    }]
-                }
-                "}
-            
-            }
+{
+    "Bandeira": "Extra",
+    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+    "Message": {
+        "Content": "{
+        "Skus": [{
+            "Codigo": 8477,
+            "PrecoDe": 113.7400,
+            "PrecoPor": 96.7500,
+            "Disponibilidade": 1,
+            "IdCampanha": 55,
+            "IdLojista": 15
+        }, {
+            "Codigo": 8507,
+            "PrecoDe": 1999.0000,
+            "PrecoPor": 1399.3000,
+            "Disponibilidade": 1,
+            "IdCampanha": 55,
+            "IdLojista": 15
+        }]
+    }
+    "}
+
+}
                
           </code></pre>
    </div>
@@ -1418,26 +1780,26 @@
                   <div class="highlight">
                     <pre class="highlight">
               <code>
-                  {
-                    "Bandeira": "Extra",
-                    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-                    "Message": {
-                        "Content": "{
-                        "Campanhas": [{
-                            "IdCampanha": null,
-                            "Nome": null,
-                            "DataInicial": null,
-                            "DataFinal": null,
-                            "FlagVigente": null,
-                            "EntregasTipo": [{
-                                "IdTipoEntrega": 0,
-                                "FlagDisponivel": null
-                            }]
-                        }]
-                    }
-                    "}
-                
-                }
+{
+    "Bandeira": "Extra",
+    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+    "Message": {
+        "Content": "{
+        "Campanhas": [{
+            "IdCampanha": null,
+            "Nome": null,
+            "DataInicial": null,
+            "DataFinal": null,
+            "FlagVigente": null,
+            "EntregasTipo": [{
+                "IdTipoEntrega": 0,
+                "FlagDisponivel": null
+            }]
+        }]
+    }
+    "}
+
+}
                  
               </code></pre>
       </div>
@@ -18690,7 +19052,7 @@ curl
               <li class="tocify-item" data-unique="post-de-notificação"><a>Em Branco</a></li>
           </ul>
           <ul id="tocify-header7" class="tocify-header nav nav-list">
-              <li class="tocify-item has-subitens" data-unique="anexos"><a>Em Branco</a></li>
+              <li class="tocify-item has-subitens" data-unique="anexos"><a>Anexos</a></li>
               <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
                   <li class="tocify-item has-subitens" data-unique="lista-de-providers"><a>Lista de Providers</a></li>
                   <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
