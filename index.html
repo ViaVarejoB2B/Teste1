@@ -113,30 +113,8 @@
 
             <li><a href="https://ViaVarejo.github.io/">Início</a></li>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <li class="active">&gt; <a href="https://ViaVarejo.github.io//manual/ViaVarejo-B2B ViaVarejo">Integração B2B
                 - Via Varejo X Parceiros</a></li>
-
-
-
           </ol>
         </div>
       </div>
@@ -839,7 +817,7 @@
               </tr>
             </tbody>
         </table>
-      </div>
+      
       <div name="request10" data-unique="request10"></div>
       
 
@@ -879,46 +857,6 @@
             Todas mensagens que não responderem nesse padrão, serão consideradas como não entregues. </aside>
 
 
-            <div name="Benefícios" data-unique="Benefícios"></div>
-      <h2 id="Benefícios">Benefícios</h2>
-                    <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
-                  
-      
-      <div name="response10" data-unique="response10"></div>
-      
-
-      <div class="code-fullscreen">
-                <a data-language-name="Request" class="active"></a> </div>
-          <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
-            ></a>
-            <div class="highlight">
-              <pre class="highlight">
-        <code>
-        <span class="p">{</span>
-        <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
-        <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
-        <span class=s2>"Message"</span><span class="p">:</span>
-        <span class=s2>{"Content":"XXXXX”}</span>
-        <span class=s2>}</span>
-</span></code></pre>
-</div>
-          </div>
-               <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
-                    ></a>
-                  <div class="highlight">
-                    <pre class="highlight">
-              <code>
-         <span class="p">{</span>
-         <span class=s2>"IsValid":True</span>,
-         <span class=s2>"StatusCode"</span>:<span class="p">"0",</span>
-         <span class=s2>"Message"</span>:[<span class="w">
-                   <span class=s2>{</span>
-                    </span><span class=s2>"Content":"",</span>
-                    </span><span class=s2>"Type": "No Error"</span>
-                   <span class=s2>}</span>
-             </span><span class=s2>]</span>
-         <span class=s2>}</span></span></code></pre></div></div>
-      
          <div name="Mensageria-Preço-Específico" data-unique="Mensageria-Preço-Específico"></div>
          <h2 id="Mensageria-Preço-Específico">Preço Específico</h2>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
@@ -934,13 +872,16 @@
                <div class="highlight">
                  <pre class="highlight">
            <code>
-           <span class="p">{</span>
-           <span class=s2>"Bandeira"</span><span class="s2">"Extra"</span>,
-           <span class=s2>"CorrelationId"</span>:<span class="p">"9639e252-41e5-463d-b923-679c6c1e4bf5"</span>
-           <span class=s2>"Message"</span><span class="p">:</span>
-           <span class=s2>{"Content":"XXXXX”}</span>
-           <span class=s2>}</span>
-   </span></code></pre>
+              {
+                "CorrelationId":"6dc0d677-3cd2-49bf-bb91-2170f36a264c",
+                "Topic":null,
+                "Key":null
+                ,"Bandeira":"Extra",
+                "Token":null,
+                "Message":{"Content":"{\"Skus\":[{\"Codigo\":5104,\"PrecoDe\":65.2,\"PrecoPor\":25.96,\"Disponibilidade\":1,\"IdCampanha\":2274,\"IdLojista\":15,\"TiposEntrega\":null}]}"}
+                }                         
+          
+          </code></pre>
    </div>
              </div>
                   <div class="language-Response highlighter-rouge" style="display: none;"><a class="fa expand-btn"
@@ -1239,109 +1180,52 @@
                          <span class=s2>}</span>
                    </span><span class=s2>]</span>
                <span class=s2>}</span></span></code></pre></div></div>
+     
 
+               <h2 id="ambientes">Ambientes</h2>
 
+      <div name="ambiente-Homologação" data-unique="ambiente-Homologação"></div>
+      <h3 id="ambiente-Homologação">Ambiente Homologação</h3>
 
+      <p>Experimente as nossas APIs sem compromisso!</p>
 
+      <table>
+        <thead>
+          <tr>
+            <th>Informação</th>
+            <th>Descrição</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Credenciais de Acesso à API</td>
+            <td>Entre em contato com <a href=mailto:comercialb2b@viavarejo.com.br">nosso time Comercial</a> e solicite
+              uma conta de testes.<br>Ao fim do cadastro você receberá um <code class="highlighter-rouge">Token</code>,
+              <code class="highlighter-rouge">CNPJ</code>,<code class="highlighter-rouge">Código do Parceiro</code> e
+              <code class="highlighter-rouge">Campanha</code><br> que deverão ser utilizados para autenticar todas as
+              requisições feitas para os endpoints da API</td>
+          </tr>
+          <tr>
+            <td>Endpoint Transacional Pontofrio</td>
+            <td>http://api-integracao-b2b.pontofriohlg.net/pedidos</td>
+          </tr>
+          <tr>
+            <td>Endpoint Transacional Casas Bahia</td>
+            <td>http://api-integracao-b2b.casasbahiahlg.net/pedidos</td>
+          </tr>
 
-
-      <div name="capturando-uma-transação" data-unique="capturando-uma-transação"></div>
-      <h3 id="capturando-uma-transação">Capturando uma transação</h3>
-
-      <p>Uma transação submetida com o parâmetro <code class="highlighter-rouge">Payment.Capture</code> igual a
-        <em>false</em> necessita de uma operação PUT de “Captura” para confirmar a transação posteriormente.</p>
-
-      <p>Transações que não forem capturadas em até 15 dias são automaticamente desfeitas pelas Processadoras. Clientes
-        podem ter negociações específicas com as Processadoras que aumentam esse prazo.</p>
-
-      <div name="requisição13" data-unique="requisição13"></div>
-      <h4 id="requisição-1">Requisição</h4>
-
-      <aside class="request"><span class="method put">PUT</span> <span
-          class="endpoint">/v2/sales/{PaymentId}/capture</span></aside>
-
-      <div class="code-fullscreen">
-        <div class="language-group">
-          <div class="language-buttons"><a data-language-name="json" class="active">JSON</a><a
-              data-language-name="shell">cURL</a><a data-language-name="html">HTML</a></div>
-          <div class="language-shell highlighter-rouge" style="display: none;"><a class="fa expand-btn"
-              title="Comutar"><i class="fa fa-expand" aria-hidden="true"></i></a>
-            <div class="highlight">
-              <pre class="highlight"><code>
-curl
-<span class="nt">--request</span> PUT <span class="s2">"https://apiHomologação.ViaVarejo.com.br/v2/sales/{PaymentId}/capture?amount=xxx&amp;serviceTaxAmount=xxx"</span>
-<span class="nt">--header</span> <span class="s2">"Content-Type: application/json"</span>
-<span class="nt">--header</span> <span class="s2">"MerchantId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"</span>
-<span class="nt">--header</span> <span class="s2">"MerchantKey: 0123456789012345678901234567890123456789"</span>
-<span class="nt">--header</span> <span class="s2">"RequestId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"</span>
-<span class="nt">--verbose</span>
-
-</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="table-wrap" style="min-height:232px;">
-        <table>
-          <thead>
-            <tr>
-              <th>Propriedade</th>
-              <th>Descrição</th>
-              <th>Tipo</th>
-              <th>Tamanho</th>
-              <th>Obrigatório</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><code class="highlighter-rouge">MerchantId</code></td>
-              <td>Identificador da loja na API.</td>
-              <td>Guid</td>
-              <td>36</td>
-              <td>Sim</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">MerchantKey</code></td>
-              <td>Chave Publica para Autenticação Dupla na API.</td>
-              <td>Texto</td>
-              <td>40</td>
-              <td>Sim</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">RequestId</code></td>
-              <td>Identificador do Request definido pela loja, utilizado quando o lojista usa diferentes servidores para
-                cada GET/POST/PUT</td>
-              <td>Guid</td>
-              <td>36</td>
-              <td>Não</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">PaymentId</code></td>
-              <td>Campo Identificador do Pedido.</td>
-              <td>Guid</td>
-              <td>36</td>
-              <td>Sim</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">Amount</code></td>
-              <td>Valor a ser capturado (em centavos). Verificar se a adquirente utilizada suporta uma captura parcial
-              </td>
-              <td>Número</td>
-              <td>15</td>
-              <td>Não</td>
-            </tr>
-            <tr>
-              <td><code class="highlighter-rouge">ServiceTaxAmount</code></td>
-              <td>Aplicável para companhias aéreas. Montante do valor da autorização que deve ser destinado à taxa de
-                serviço. Obs.: Esse valor não é adicionado ao valor da autorização.</td>
-              <td>Número</td>
-              <td>15</td>
-              <td>Não</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+          <tr>
+            <td>Endpoint Transacional Extra</td>
+            <td>http://api-integracao-b2b.extrahlg.net/pedidos</td>
+          </tr>
+          <tr>
+            <td>Endpoint para Serviços de Consultas</td>
+            <td>http://api-integracao-b2b.<code class="highlighter-rouge">{Bandeira}</code>hlg.net/pedidos<code
+                class="highlighter-rouge">{idCompra}</code></td>
+          </tr>
+        </tbody>
+      </table>
+      
 
       <div name="resposta14" data-unique="resposta14"></div>
       <h4 id="resposta-1">Resposta</h4>
