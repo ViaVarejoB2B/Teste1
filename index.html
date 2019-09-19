@@ -924,50 +924,60 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                 </thead>
                 <tbody>
                   <tr>
-                    <td><code class="highlighter-rouge">Bandeira</code></td>
-                    <td>Texto</td>
-                    <td>Identificação da Bandeira</td>
-                  </tr>
-                  <tr>
                     <td><code class="highlighter-rouge">CorrelationId</code></td>
-                    <td>Guid</td>
-                    <td>Identificação da mensagem de ponta a ponta</td>
+                    <td>x</td>
+                    <td>x</td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Message.Content</code></td>
-                    <td>Texto</td>
-                    <td>15</td>
+                    <td><code class="highlighter-rouge">Topic</code></td>
+                    <td>x</td>
+                    <td>x</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Bandeira</code></td>
+                    <td>x</td>
+                    <td>x</td>
+                  </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Token</code></td>
+                    <td>x</td>
+                    <td>x</td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">Skus.Codigo</code></td>
-                    <td>Número</td>
-                    <td>Código do sku</td>
-                  </tr>
+                    <td>x</td>
+                    <td>x</td>
+                    </tr>
                   <tr>
                     <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
-                    <td>Número</td>
-                    <td>Preco De do sku</td>
+                    <td>x</td>
+                    <td>x</td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
-                    <td>Número</td>
-                    <td>Preco Por do sku</td>
+                    <td>x</td>
+                    <td>x</td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
-                    <td>Número</td>
-                    <td>Disponibilidade do sku</td>
+                    <td>x</td>
+                    <td>x</td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
-                    <td>Número</td>
-                    <td>Id da campanha</td>
+                    <td>x</td>
+                    <td>x</td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
-                    <td>Número</td>
-                    <td>Id do lojista</td>
+                    <td>x</td>
+                    <td>x</td>
                     </tr>
+                  <tr>
+                    <td><code class="highlighter-rouge">Skus.TiposEntrega</code></td>
+                    <td>x</td>
+                    <td>x</td>
+                  </tr> 
                 </tbody>
               </table>
 
@@ -1039,39 +1049,19 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                     </tr>
                     <tr>
                       <td><code class="highlighter-rouge">Message.Content</code></td>
-                      <td>Texto</td>
-                      <td>15</td>
+                      <td></td>
+                      <td></td>
                     </tr>
                     <tr>
-                      <td><code class="highlighter-rouge">Skus.Codigo</code></td>
-                      <td>Número</td>
-                      <td>Código do sku</td>
+                      <td><code class="highlighter-rouge">Lojistas.Codigo</code></td>
+                      <td></td>
+                      <td></td>
                     </tr>
                     <tr>
-                      <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
-                      <td>Número</td>
-                      <td>Preco De do sku</td>
-                    </tr>
-                    <tr>
-                      <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
-                      <td>Número</td>
-                      <td>Preco Por do sku</td>
-                    </tr>
-                    <tr>
-                      <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
-                      <td>Número</td>
-                      <td>Disponibilidade do sku</td>
-                    </tr>
-                    <tr>
-                      <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
-                      <td>Número</td>
-                      <td>Id da campanha</td>
-                    </tr>
-                    <tr>
-                      <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
-                      <td>Número</td>
-                      <td>Id do lojista</td>
-                      </tr>
+                      <td><code class="highlighter-rouge">Lojistas.NomeLojista</code></td>
+                      <td></td>
+                      <td></td>
+                    </tr>                  
                   </tbody>
                 </table>
                <div name="Mensageria-Categoria" data-unique="Mensageria-Categoria"></div>
@@ -1090,70 +1080,39 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                        <pre class="highlight">
 <code>
 {
-    "Bandeira": "Extra",
-    "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-    "Message": {
-        "Content": "{
-        "Categorias": [{
-                    "Codigo": 45,
-                    "Level": 1,
-                    "Nome": "Livre Embratel|45",
-                    "IdDepartamento": 38,
-                    "NomeDepartamento": "TelefoniaFixa",
-                    "IdCategoriaPai": 327,
-                    "NomeCategoriaPai": "TelefoniaFixa"
-                },
-                {
-                    "Codigo": 300,
-                    "Level": 1,
-                    "Nome": "Talheres Descartáveis|300",
-                    "IdDepartamento": 2894,
-                    "NomeDepartamento": "artigosdescartaveis",
-                    "IdCategoriaPai": 3295,
-                    "NomeCategoriaPai": "artigosdescartaveis
-                    "},{
-                    "Codigo": 402,
-                    "Level": 1,
-                    "Nome": "Jogos Zeebo|402",
-                    "IdDepartamento": 336,
-                    "NomeDepartamento": "Zeebo",
-                    IdCategoriaPai ":400,
-                    "NomeCategoriaPai": "Zeebo
-                    "}]}"
-                }
-            } {
-                "Bandeira": "Extra",
-                "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
-                "Message": {
-                    "Content": "{
-                    "Categorias": [{
-                            "Codigo": 45,
-                            "Level": 1,
-                            "Nome": "Livre Embratel|45",
-                            "IdDepartamento": 38,
-                            "NomeDepartamento": "TelefoniaFixa",
-                            "IdCategoriaPai": 327,
-                            "NomeCategoriaPai": "TelefoniaFixa"
-                        },
-                        {
-                            "Codigo": 300,
-                            "Level": 1,
-                            "Nome": "Talheres Descartáveis|300",
-                            "IdDepartamento": 2894,
-                            "NomeDepartamento": "artigosdescartaveis",
-                            "IdCategoriaPai": 3295,
-                            "NomeCategoriaPai": "artigosdescartaveis
-                            "},{
-                            "Codigo": 402,
-                            "Level": 1,
-                            "Nome": "Jogos Zeebo|402",
-                            "IdDepartamento": 336,
-                            "NomeDepartamento": "Zeebo",
-                            IdCategoriaPai ":400,
-                            "NomeCategoriaPai": "Zeebo
-                            "}]}"
-                        }
-                    }
+  "Bandeira": "Extra",
+  "CorrelationId": "9639e252-41e5-463d-b923-679c6c1e4bf5",
+  "Message": {
+      "Content": "{
+      "Categorias": [{
+                  "Codigo": 45,
+                  "Level": 1,
+                  "Nome": "Livre Embratel|45",
+                  "IdDepartamento": 38,
+                  "NomeDepartamento": "TelefoniaFixa",
+                  "IdCategoriaPai": 327,
+                  "NomeCategoriaPai": "TelefoniaFixa"
+              },
+              {
+                  "Codigo": 300,
+                  "Level": 1,
+                  "Nome": "Talheres Descartáveis|300",
+                  "IdDepartamento": 2894,
+                  "NomeDepartamento": "artigosdescartaveis",
+                  "IdCategoriaPai": 3295,
+                  "NomeCategoriaPai": "artigosdescartaveis"
+              },
+              {
+                  "Codigo": 402,
+                  "Level": 1,
+                  "Nome": "Jogos Zeebo|402",
+                  "IdDepartamento": 336,
+                  "NomeDepartamento": "Zeebo",
+                  IdCategoriaPai ":400,
+                  "NomeCategoriaPai": "Zeebo"
+              }]}"
+              }
+          } 
                      
 </code></pre>
          </div>
@@ -1184,49 +1143,44 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                       <tbody>
                         <tr>
                           <td><code class="highlighter-rouge">Bandeira</code></td>
-                          <td>Texto</td>
-                          <td>Identificação da Bandeira</td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
                           <td><code class="highlighter-rouge">CorrelationId</code></td>
-                          <td>Guid</td>
-                          <td>Identificação da mensagem de ponta a ponta</td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
-                          <td><code class="highlighter-rouge">Message.Content</code></td>
-                          <td>Texto</td>
-                          <td>15</td>
+                          <td><code class="highlighter-rouge">Categorias.Codigo</code></td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
-                          <td><code class="highlighter-rouge">Skus.Codigo</code></td>
-                          <td>Número</td>
-                          <td>Código do sku</td>
+                          <td><code class="highlighter-rouge">Categorias.Nome</code></td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
-                          <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
-                          <td>Número</td>
-                          <td>Preco De do sku</td>
+                          <td><code class="highlighter-rouge">Categorias.IdDepartamento</code></td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
-                          <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
-                          <td>Número</td>
-                          <td>Preco Por do sku</td>
+                          <td><code class="highlighter-rouge">Categorias.NomeDepartamento</code></td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
-                          <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
-                          <td>Número</td>
-                          <td>Disponibilidade do sku</td>
+                          <td><code class="highlighter-rouge">Categorias.IdCategoriaPai</code></td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
                         <tr>
-                          <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
-                          <td>Número</td>
-                          <td>Id da campanha</td>
+                          <td><code class="highlighter-rouge">Categorias.NomeCategoriaPai</code></td>
+                          <td>x</td>
+                          <td>x</td>
                         </tr>
-                        <tr>
-                          <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
-                          <td>Número</td>
-                          <td>Id do lojista</td>
-                          </tr>
                       </tbody>
                     </table>
                   <div name="Mensageria-ProdutoParcial" data-unique="Mensageria-ProdutoParcial"></div>
@@ -1251,28 +1205,17 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
         "Content": "{
         "Produtos": [{
             "Codigo": 8275547,
-            "DisplayName": "Smartphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5",
-            Dual Chip,
-            Câmera Traseira Dupla,
-            Android 7.0,
-            Processador Quad Core e 2 GB RAM ","
-            DescricaoLonga ":" < p > O < strong > ZenFone 4 Max DTV < /strong> é um parelho completo, que une a qualidade de um televisor com à mobilidade do celular.</p >
-            ","
-            IdCategoria ":3266,"
-            CodigoFabricante ":645,"
-            NomeFabricante ":
-            "Asus",
+            "DisplayName": "Smartphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5", Dual Chip, Câmera Traseira Dupla,
+            Android 7.0, Processador Quad Core e 2 GB RAM ",
+            "DescricaoLonga":" <p> O <strong>ZenFone 4 Max DTV</strong> é um parelho completo, que une a qualidade de um televisor com à mobilidade do celular.</p >",
+            "IdCategoria ":3266,
+            "CodigoFabricante":645,
+            "NomeFabricante ":"Asus",
             "FotoPequena": 863934947,
             "FotoMedia": 863934951,
             "FotoGrande": 863934954,
-            "PalavraChave": "martphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5",
-            Dual Chip,
-            Câmera Traseira Dupla,
-            Android 7.0,
-            Processador Quad Core e 2 GB RAM Asus,
-            Android,
-            Smartphones,
-            Telefones e Celulares ","
+            "PalavraChave": "martphone Asus Zenfone 4 Max DTV ZC554KL Preto com 16GB, Tela 5.5", Dual Chip, Câmera Traseira Dupla, Android 7.0,
+            Processador Quad Core e 2 GB RAM Asus, Android, Smartphones, Telefones e Celulares ","
             MaisVendidos ":8,
             "Skus": [{
                 "IdSku": 11823957,
@@ -1310,15 +1253,15 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
             "Codigo": 8154832,
             "DisplayName": "Smartphone Motorola Moto G5s XT1792 Ouro com 32GB, Tela de 5.2`. 
             O acabamento metálico,
-            além de deixar o celular mais resistente lhe confere muita sofisticação. < /p>",
+            além de deixar o celular mais resistente lhe confere muita sofisticação. </p>",
             "IdCategoria": 3266,
             "CodigoFabricante": 356,
             "NomeFabricante": "Motorola",
             "FotoPequena": 856378530,
             "FotoMedia": 856378534,
             "FotoGrande": 856378537,
-            "PalavraChave": "martphone Motorola Moto G5 S XT1792 Ouro com 32GB, Tela de 5.2``, Dual Chip, Android 7.1, 4G, Câmera 16MP, Processador Octa-Core e 2GB de RAM  <
-            p > A < strong > família Moto G < /strong> cresceu e traz o novíssimo",
+            "PalavraChave": "martphone Motorola Moto G5 S XT1792 Ouro com 32GB, Tela de 5.2``, Dual Chip, Android 7.1, 4G, Câmera 16MP, Processador Octa-Core e 2GB de RAM  
+            <p> A <strong> família Moto G </strong> cresceu e traz o novíssimo",</p>
             "MaisVendidos": 3032,
             "Skus": [{
                 "IdSku": 11700720,
@@ -1387,49 +1330,171 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
             <tbody>
               <tr>
                 <td><code class="highlighter-rouge">Bandeira</code></td>
-                <td>Texto</td>
-                <td>Identificação da Bandeira</td>
+                <td> </td>
+                <td> </td>
               </tr>
               <tr>
                 <td><code class="highlighter-rouge">CorrelationId</code></td>
-                <td>Guid</td>
-                <td>Identificação da mensagem de ponta a ponta</td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Message.Content</code></td>
-                <td>Texto</td>
-                <td>15</td>
+                <td><code class="highlighter-rouge">Produtos.Codigo</code></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Skus.Codigo</code></td>
-                <td>Número</td>
-                <td>Código do sku</td>
+                <td><code class="highlighter-rouge">Produtos.DisplayName</code></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
-                <td>Número</td>
-                <td>Preco De do sku</td>
+                <td><code class="highlighter-rouge">Produtos.DescricaoLonga </code></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
-                <td>Número</td>
-                <td>Preco Por do sku</td>
+                <td><code class="highlighter-rouge">Produtos.IdCategoria </code></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
-                <td>Número</td>
-                <td>Disponibilidade do sku</td>
+                <td><code class="highlighter-rouge">Produtos.CodigoFabricante</code></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
-                <td>Número</td>
-                <td>Id da campanha</td>
+                <td><code class="highlighter-rouge">Produtos.NomeFabricante </code></td>
+                <td></td>
+                <td></td>
               </tr>
               <tr>
-                <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
-                <td>Número</td>
-                <td>Id do lojista</td>
+                <td><code class="highlighter-rouge">Produtos.FotoPequena</code></td>
+                <td></td>
+                <td></td>
+               <tr>
+                <td><code class="highlighter-rouge">Produtos.FotoPequena</code></td>
+                <td></td>
+                <td></td>               
                 </tr>
+                <tr>
+                <td><code class="highlighter-rouge">Produtos.FotoMedia</code></td>
+                <td></td>
+                <td></td>
+               </tr>
+                <tr>
+                <td><code class="highlighter-rouge">Produtos.PalavraChave</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                <td><code class="highlighter-rouge">Produtos.MaisVendidos </code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                <td><code class="highlighter-rouge">Skus.IdSku</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                 <tr>
+                <td><code class="highlighter-rouge">Skus.Preco</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                                  <tr>
+                <td><code class="highlighter-rouge">Skus.UltimaModificacao</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                                  <tr>
+                <td><code class="highlighter-rouge">Skus.Habilitado</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                                  <tr>
+                <td><code class="highlighter-rouge">Skus.Modelo</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                                  <tr>
+                <td><code class="highlighter-rouge">Skus.EAN</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                                  <tr>
+                <td><code class="highlighter-rouge">Imagens.ImageMenor</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                                  <tr>
+                <td><code class="highlighter-rouge">Imagens.ImagemMaior</code></td>
+                <td></td>
+                <td></td>
+                <tr>                 
+                <td><code class="highlighter-rouge">Imagens.ImagemZoom</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>                 
+                <td><code class="highlighter-rouge">Imagens.Ordem</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                <tr>                 
+                <td><code class="highlighter-rouge">Itens.Descricao</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                <tr>                 
+                <td><code class="highlighter-rouge">Itens.Valor</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                <tr>                 
+                <td><code class="highlighter-rouge">Grupos.Codigo</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                <tr>                 
+                <td><code class="highlighter-rouge">Grupos.Nome</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                                <tr>                 
+                <td><code class="highlighter-rouge">FichaTecnica.FotoZoom</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                                                <tr>                 
+                <td><code class="highlighter-rouge">FichaTecnica.OrdemImagem</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                                                <tr>                 
+                <td><code class="highlighter-rouge">FichaTecnica.FotoZoom</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                                                <tr>                 
+                <td><code class="highlighter-rouge">FichaTecnica.PermaLink</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                                                <tr>                 
+                <td><code class="highlighter-rouge">FichaTecnica.PermaLinkCategoria</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                                                <tr>                 
+                <td><code class="highlighter-rouge">FichaTecnica.PermaLinkFabricante</code></td>
+                <td></td>
+                <td></td>
+                </tr>
+                                <tr>
+                <td><code class="highlighter-rouge">FichaTecnica.NomeCategoria</code></td>
+                <td></td>
+                <td></td>
+                <tr>
+                 <tr>
             </tbody>
           </table>
          <div name="Mensageria-Estoque" data-unique="Mensageria-Estoque"></div>
@@ -1452,21 +1517,21 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
     "CorrelationId": "f0298bbc-c0e4-4784-9269-b2d85b61fa55",
     "Message": {
         "Content": "{
-        "Estoques
-        ":[{
-        "IdSku": 295742,
-        "IdLojista": 31897,
-        "FlagSkuSaldoDisponivel": true,
-        "SaldoEstoque": 7000000,
-        "DataUltimaAtualizacao": "2018-08-03T12:20:01,{
-        "IdSku": 13193400,
-        "IdLojista": 31897,
-        "FlagSkuSaldoDisponivel": true,
-        "SaldoEstoque": 14,
-        "DataUltimaAtualizacao": "2018-08-03T12:20:01"
-    }]
-}
-"}
+        "Estoques": [{
+            "IdSku": 295742,
+            "IdLojista": 31897,
+            "FlagSkuSaldoDisponivel": true,
+            "SaldoEstoque": 7000000,
+            "DataUltimaAtualizacao": "2018-08-03T12:20:01, 
+            {
+            "IdSku": 13193400,
+            "IdLojista": 31897,
+            "FlagSkuSaldoDisponivel": true,
+            "SaldoEstoque": 14,
+            "DataUltimaAtualizacao": "2018-08-03T12:20:01"
+        }]
+    }
+    "}
 }
                 
           </code></pre>
@@ -1498,49 +1563,39 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                 <tbody>
                   <tr>
                     <td><code class="highlighter-rouge">Bandeira</code></td>
-                    <td>Texto</td>
-                    <td>Identificação da Bandeira</td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">CorrelationId</code></td>
-                    <td>Guid</td>
-                    <td>Identificação da mensagem de ponta a ponta</td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Message.Content</code></td>
-                    <td>Texto</td>
-                    <td>15</td>
+                    <td><code class="highlighter-rouge">Estoques.IdSku</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.Codigo</code></td>
-                    <td>Número</td>
-                    <td>Código do sku</td>
+                    <td><code class="highlighter-rouge">Estoques.IdLojista</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
-                    <td>Número</td>
-                    <td>Preco De do sku</td>
+                    <td><code class="highlighter-rouge">Estoques.FlagSkuSaldoDisponivel</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
-                    <td>Número</td>
-                    <td>Preco Por do sku</td>
+                    <td><code class="highlighter-rouge">Estoques.SaldoEstoque</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
-                    <td>Número</td>
-                    <td>Disponibilidade do sku</td>
+                    <td><code class="highlighter-rouge">Estoques.DataUltimaAtualizacao</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
-                  <tr>
-                    <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
-                    <td>Número</td>
-                    <td>Id da campanha</td>
-                  </tr>
-                  <tr>
-                    <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
-                    <td>Número</td>
-                    <td>Id do lojista</td>
-                    </tr>
                 </tbody>
               </table>
             <div name="Tracking" data-unique="Tracking"></div>
@@ -1609,48 +1664,68 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                 <tbody>
                   <tr>
                     <td><code class="highlighter-rouge">Bandeira</code></td>
-                    <td>Texto</td>
-                    <td>Identificação da Bandeira</td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
                     <td><code class="highlighter-rouge">CorrelationId</code></td>
-                    <td>Guid</td>
-                    <td>Identificação da mensagem de ponta a ponta</td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Message.Content</code></td>
-                    <td>Texto</td>
-                    <td>15</td>
+                    <td><code class="highlighter-rouge">Trackings.IdCompra</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.Codigo</code></td>
-                    <td>Número</td>
-                    <td>Código do sku</td>
+                    <td><code class="highlighter-rouge">Trackings.StatusCompra</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.PrecoDe</code></td>
-                    <td>Número</td>
-                    <td>Preco De do sku</td>
+                    <td><code class="highlighter-rouge">Trackings.IdPedidoParceiro</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.PrecoPor</code></td>
-                    <td>Número</td>
-                    <td>Preco Por do sku</td>
+                    <td><code class="highlighter-rouge">Trackings.IdParceiro</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.Disponibilidade</code></td>
-                    <td>Número</td>
-                    <td>Disponibilidade do sku</td>
+                    <td><code class="highlighter-rouge">Trackings.IdCampanha</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.IdCampanha</code></td>
-                    <td>Número</td>
-                    <td>Id da campanha</td>
+                    <td><code class="highlighter-rouge">Trackings.DataPedidoParceiro</code></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                   <tr>
-                    <td><code class="highlighter-rouge">Skus.IdLojista</code></td>
-                    <td>Número</td>
-                    <td>Id do lojista</td>
+                    <td><code class="highlighter-rouge">Trackings.IdContrato</code></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                                      <tr>
+                    <td><code class="highlighter-rouge">Trackings.Cnpj</code></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                                      <tr>
+                    <td><code class="highlighter-rouge">Trackings.IdCanalVenda</code></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                                      <tr>
+                    <td><code class="highlighter-rouge">Trackings.CodigoRastreio</code></td>
+                    <td></td>
+                    <td></td>
+                    </tr>
+                                                          <tr>
+                    <td><code class="highlighter-rouge">Trackings.Transportadora</code></td>
+                    <td></td>
+                    <td></td>
                     </tr>
                 </tbody>
               </table>
@@ -19218,17 +19293,17 @@ curl
   </script>
 
 
-<!-- Hotjar Tracking Code for https://viavarejob2b.github.io -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1489970,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+  <!-- Hotjar Tracking Code for https://ViaVarejo.github.io/ -->
+  <script>
+    (function (h, o, t, j, a, r) {
+      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+      h._hjSettings = { hjid: 1489970, hjsv: 6 };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script'); r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+  </script>
 
 
 
