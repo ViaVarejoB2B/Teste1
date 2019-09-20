@@ -121,8 +121,8 @@
     </div>
 
     <div class="post">
-      <div name="introdução-ao-B2B-ViaVarejo" data-unique="introdução-ao-B2B-ViaVarejo"></div>
-      <h1 id="introdução-ao-B2B-ViaVarejo">Integração B2B - Via Varejo X Parceiros</h1>
+      <div name="introdução-B2B-ViaVarejo" data-unique="introdução-ao-B2B-ViaVarejo"></div>
+      <h1 id="introdução-B2B-ViaVarejo">Introdução B2B ViaVarejo</h1>
 
       <p><strong>O objetivo desta documentação é orientar o desenvolvedor sobre como integrar com a API do B2B da
           ViaVarejo, descrevendo os serviços disponíveis com exemplos de requisição e respostas.</strong></p>
@@ -353,7 +353,7 @@
             
             </tbody>
         </table>
-        <div name="xml01" data-unique="xml01"></div><h4 id="xml01">XML Padrão Produto Completo</h4>
+        
       <div class="code-fullscreen">
           <a data-language-name="Request" class="active"></a> </div>
           <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
@@ -448,7 +448,7 @@
                   
                 
 
-                  <div name="xml02" data-unique="xml02"></div><h4 id="xml02">XML Padrão Produto Parcial</h4>
+
                   <div class="code-fullscreen">
                       <a data-language-name="Request" class="active"></a> </div>
                       <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
@@ -540,7 +540,7 @@
                   </table>
                  
                 
-                  <div name="xml03" data-unique="xml03"></div><h4 id="xml03">XML Padrão Categoria</h4>
+
                   <div class="code-fullscreen">
                       <a data-language-name="Request" class="active"></a> </div>
                       <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
@@ -612,7 +612,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Categoria?idParceiro=13
                    </table>
                    
                  
-                   <div name="xml04" data-unique="xml04"></div><h4 id="xml04">XML Padrão Estoque</h4>
+
       <div class="code-fullscreen">
           <a data-language-name="Request" class="active"></a> </div>
           <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
@@ -683,7 +683,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Estoque?idParceiro=13 -
                     </table>
                     
                   
-                    <div name="xml05" data-unique="xml05"></div><h4 id="xml05">XML Padrão Disponibilidade</h4>
+
       <div class="code-fullscreen">
           <a data-language-name="Request" class="active"></a> </div>
           <div class="language-Request highlighter-rouge" style="display: block;"><a class="fa expand-btn"
@@ -724,7 +724,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                    </div>
 
                    <div name="Mensageria" data-unique="Mensageria"></div>
-                   <h1 id="Mensageria">Mensageria</h1>
+                   <h2 id="Mensageria">Mensageria</h2>
                 
                 <p>A disponibilização via mensageria, foi criada para deixar os parceiros sempre atualizados com as informações das bandeiras. Com essa integração, o download e o processamento dos arquivos ZIP periodicamente, não será necessário. Todas as propriedades enviadas nos arquivos, são enviadas também via mensageria.</p>
                 <aside class="warning">
@@ -788,7 +788,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                     para o parceiro que iniciou a integração com o B2B.</p>
                                       
                     <div name="Request-Padrão" data-unique="Request-Padrão"></div>
-      <h2 id="Request-Padrão">Request Padrão</h2>
+      <h3 id="Request-Padrão">Request Padrão</h3>
                     <p>Em todas as mensagens, enviaremos as seguintes informações no Requisição:</p>
                     
         <table>
@@ -859,7 +859,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
 
 
          <div name="Mensageria-Preço-Específico" data-unique="Mensageria-Preço-Específico"></div>
-         <h2 id="Mensageria-Preço-Específico">Preço Específico</h2>
+         <h3 id="Mensageria-Preço-Específico">Preço Específico</h3>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                      
          
@@ -982,7 +982,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
               </table>
 
             <div name="Lojistao" data-unique="Lojista"></div>
-            <h2 id="Lojista">Lojista</h2>
+            <h3 id="Lojista">Lojista</h3>
                           <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                         
             
@@ -1060,7 +1060,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                   </tbody>
                 </table>
                <div name="Mensageria-Categoria" data-unique="Mensageria-Categoria"></div>
-               <h2 id="Categoria">Categoria</h2>
+               <h3 id="Categoria">Categoria</h3>
                              <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                            
                
@@ -1179,7 +1179,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                       </tbody>
                     </table>
                   <div name="Mensageria-ProdutoParcial" data-unique="Mensageria-ProdutoParcial"></div>
-      <h2 id="Mensageria-ProdutoParcial">Produto Parcial</h2>
+      <h3 id="Mensageria-ProdutoParcial">Produto Parcial</h3>
                     <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                   
      
@@ -1493,7 +1493,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
             </tbody>
           </table>
          <div name="Mensageria-Estoque" data-unique="Mensageria-Estoque"></div>
-         <h2 id="Mensageria-Estoque">Estoque</h2>
+         <h3 id="Mensageria-Estoque">Estoque</h3>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                      
         
@@ -1594,7 +1594,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                 </tbody>
               </table>
             <div name="Tracking" data-unique="Tracking"></div>
-         <h2 id="Tracking">Tracking</h2>
+         <h3 id="Tracking">Tracking</h3>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                      
         
@@ -1725,7 +1725,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                 </tbody>
               </table>
             <div name="DisponibilidadePreço" data-unique="DisponibilidadePreço"></div>
-         <h2 id="DisponibilidadePreço">Disponibilidade e Preço</h2>
+         <h3 id="DisponibilidadePreço">Disponibilidade e Preço</h3>
                        <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
                      
         
@@ -1835,7 +1835,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                   </tbody>
                 </table>
                <div name="Campanha" data-unique="Campanha"></div>
-            <h2 id="Campanha">Campanha</h2>
+            <h3 id="Campanha">Campanha</h3>
             <p>Em todas as mensagens, enviaremos as seguintes informações:</p>
               <div name="requisição10" data-unique="requisição10"></div>
             <div class="code-fullscreen">
@@ -2272,7 +2272,7 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
 
       <div id="toc" class="tocify">
           <ul id="tocify-header0" class="tocify-header nav nav-list">
-              <li class="tocify-item has-subitens" data-unique="introdução-ao-pagador-api"><a>Introdução B2B ViaVarejo</a></li>
+              <li class="tocify-item has-subitens" data-unique="introdução-B2B-ViaVarejo"><a>Introdução B2B ViaVarejo</a></li>
               <ul class="tocify-subheader nav nav-list" data-tag="2" style="display: none;">
                   <li class="tocify-item has-subitens" data-unique="ambientes"><a>Ambientes</a></li>
                   <ul class="tocify-subheader nav nav-list" data-tag="3" style="display: none;">
@@ -2298,131 +2298,28 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                   <li class="tocify-item has-subitens" data-unique="Mensageria"><a>Mensageria</a></li>
                   <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
                       
-                      <li class="tocify-item has-subitens" data-unique="Request-Padrão"><a>Request Padrão</a></li>
-                      <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
-                          <li class="tocify-item" data-unique="request10"><a>Requisição</a></li>
-                          <li class="tocify-item" data-unique="request10"><a>Resposta</a></li>
-                      </ul>
-                      <li class="tocify-item" data-unique="Benefícios"><a>Benefícios</a></li>
+                      <li class="tocify-item" data-unique="Request-Padrão"><a>Request Padrão</a></li>                  
                       <li class="tocify-item" data-unique="Mensageria-Preço-Específico"><a>Preço específico</a></li>
                       <li class="tocify-item" data-unique="Lojista"><a>Lojista</a></li>
                       <li class="tocify-item" data-unique="Mensageria-Categoria"><a>Categoria</a></li>
                       <li class="tocify-item" data-unique="Mensageria-ProdutoParcial"><a>Produto Parcial</a></li>
                       <li class="tocify-item" data-unique="Mensageria-Estoque"><a>Estoque</a></li>
                       <li class="tocify-item" data-unique="Tracking"><a>Tracking</a></li>
-                      <li class="tocify-item" data-unique="DisponibilidadePreço"><a>DisponibilidadePreço</a></li>
+                      <li class="tocify-item" data-unique="DisponibilidadePreço"><a>Disponibilidade e Preço</a></li>
+                      <li class="tocify-item" data-unique="Campanha"><a>Campanha</a></li>
                   </ul>      
                 </ul>     
               </ul>           
           <ul id="tocify-header2" class="tocify-header nav nav-list">
-              <li class="criando-um-pedido" data-unique="Criando-um-pedido"><a>Criando um Pedido</a></li>
+              <li class="tocify-item has-subitens" data-unique="Criando-um-pedido"><a>Criando um Pedido</a></li>
               <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
-                  <li class="Pedido" data-unique="Pedido"><a>Pedido</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="resposta119"><a>Request</a></li>
-                      <li class="tocify-item" data-unique="resposta122"><a>Response</a></li>
-                  </ul>
-                  <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-card-token"><a>Criando uma transação com Card Token</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
-                      <li class="tocify-item" data-unique="requisição121"><a>Requisição</a></li>
-                  </ul>
-                  <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-alias"><a>Criando uma transação com Alias</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="4" style="">
-                      <li class="tocify-item" data-unique="requisição124"><a>Requisição</a></li>
-                  </ul>
+                  <li class="tocify-item" data-unique="Pedido"><a>Pedido</a></li>
+                  
+                  <li class="tocify-item" data-unique="criando-uma-transação-com-card-token"><a>Precisa de ajuda?</a></li>
+                  
               </ul>
           </ul>
-          <ul id="tocify-header3" class="tocify-header nav nav-list">
-              <li class="tocify-item has-subitens" data-unique="pagamentos-com-análise-de-fraude"><a>Em Branco</a></li>
-              <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
-                  <li class="tocify-item has-subitens" data-unique="criando-uma-transação-com-análise-de-fraude-cybersource"><a>Criando uma transação com Análise de Fraude Cybersource</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="requisição128"><a>Requisição</a></li>
-                      <li class="tocify-item" data-unique="resposta129"><a>Resposta</a></li>
-                  </ul>
-                  <li class="tocify-item has-subitens" data-unique="configuração-do-fingerprint"><a>Configuração do Fingerprint</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="cybersource"><a>Cybersource</a></li>
-                      <li class="tocify-item" data-unique="integração-em-aplicativos-mobile"><a>Integração em aplicativos mobile</a></li>
-                  </ul>
-              </ul>
-          </ul>
-          <ul id="tocify-header4" class="tocify-header nav nav-list">
-              <li class="tocify-item has-subitens" data-unique="pagamentos-com-split-de-pagamento"><a>Em Branco</a></li>
-              <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
-                  <li class="tocify-item" data-unique="requisição134"><a>Requisição</a></li>
-                  <li class="tocify-item" data-unique="resposta135"><a>Resposta</a></li>
-              </ul>
-          </ul>
-          <ul id="tocify-header5" class="tocify-header nav nav-list">
-              <li class="tocify-item has-subitens" data-unique="consultas"><a>Em Branco</a></li>
-              <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
-                  <li class="tocify-item has-subitens" data-unique="consultando-uma-transação-via-paymentid"><a>Consultando uma transação via PaymentID</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="requisição138"><a>Requisição</a></li>
-                      <li class="tocify-item" data-unique="resposta139"><a>Resposta</a></li>
-                  </ul>
-                  <li class="tocify-item has-subitens" data-unique="consultando-uma-transação-de-boleto-via-paymentid"><a>Consultando uma transação de Boleto via PaymentID</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="requisição141"><a>Requisição</a></li>
-                      <li class="tocify-item" data-unique="resposta142"><a>Resposta</a></li>
-                  </ul>
-                  <li class="tocify-item has-subitens" data-unique="consultando-uma-venda-pelo-identificador-da-loja"><a>Consultando uma venda pelo identificador da loja</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="requisição144"><a>Requisição</a></li>
-                      <li class="tocify-item" data-unique="resposta145"><a>Resposta</a></li>
-                  </ul>
-                  <li class="tocify-item has-subitens" data-unique="consultando-um-pedido-recorrente"><a>Consultando um pedido Recorrente</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="requisição147"><a>Requisição</a></li>
-                      <li class="tocify-item" data-unique="resposta148"><a>Resposta</a></li>
-                  </ul>
-              </ul>
-          </ul>
-          <ul id="tocify-header6" class="tocify-header nav nav-list">
-              <li class="tocify-item" data-unique="post-de-notificação"><a>Em Branco</a></li>
-          </ul>
-          <ul id="tocify-header7" class="tocify-header nav nav-list">
-              <li class="tocify-item has-subitens" data-unique="anexos"><a>Anexos</a></li>
-              <ul class="tocify-subheader nav nav-list" data-tag="2" style="">
-                  <li class="tocify-item has-subitens" data-unique="lista-de-providers"><a>Lista de Providers</a></li>
-                  <ul class="tocify-subheader nav nav-list" data-tag="3" style="">
-                      <li class="tocify-item" data-unique="providers-para-crédito"><a>Providers para Crédito</a></li>
-                      <li class="tocify-item" data-unique="providers-pra-débito"><a>Providers pra Débito</a></li>
-                      <li class="tocify-item" data-unique="providers-pra-voucher"><a>Providers pra Voucher</a></li>
-                      <li class="tocify-item" data-unique="providers-para-zero-auth-via-verifycard"><a>Providers para Zero Auth via VerifyCard</a></li>
-                      <li class="tocify-item" data-unique="providers-para-consulta-bin-via-verifycard"><a>Providers para Consulta BIN via VerifyCard</a></li>
-                      <li class="tocify-item" data-unique="providers-para-boleto-com-registro"><a>Providers para Boleto com Registro</a></li>
-                      <li class="tocify-item" data-unique="providers-para-transferência-eletronica-(débito-online)"><a>Providers para Transferência Eletronica (Débito Online)</a></li>
-                  </ul>
-                  <li class="tocify-item" data-unique="lista-de-status-da-transação"><a>Lista de Status da Transação</a></li>
-                  <li class="tocify-item" data-unique="lista-de-status-do-antifraude"><a>Lista de Status do Antifraude</a></li>
-                  <li class="tocify-item" data-unique="tabela-de-mdds"><a>Tabela de MDDs</a></li>
-                  <li class="tocify-item" data-unique="lista-de-http-status-code"><a>Lista de HTTP Status Code</a></li>
-                  <li class="tocify-item" data-unique="lista-de-status-da-recorrência"><a>Lista de Status da Recorrência</a></li>
-                  <li class="tocify-item" data-unique="lista-de-reasoncode/reasonmessage"><a>Lista de ReasonCode/ReasonMessage</a></li>
-                  <li class="tocify-item" data-unique="códigos-de-erros-da-api"><a>Códigos de Erros da API</a></li>
-                  <li class="tocify-item" data-unique="cartões-para-teste-(simulado)"><a>Cartões para Teste (Simulado)</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].giftcategory"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].GiftCategory</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].hosthedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].HostHedge</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].nonsensicalhedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].NonSensicalHedge</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].obscenitieshedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].ObscenitiesHedge</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].timehedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].TimeHedge</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].phonehedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].PhoneHedge</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].velocityhedge"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].VelocityHedge</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.cart.items[n].type"><a>Lista de Valores - Payment.FraudAnalysis.Cart.Items[n].Type</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.shipping.shippingmethod"><a>Lista de Valores - Payment.FraudAnalysis.Shipping.ShippingMethod</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.journeytype"><a>Lista de Valores - Payment.FraudAnalysis.Travel.JourneyType</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.passengers[n].rating"><a>Lista de Valores - Payment.FraudAnalysis.Travel.Passengers[n].Rating</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.travel.passengers[n].status"><a>Lista de Valores - Payment.FraudAnalysis.Travel.Passengers[n].Status</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.status"><a>Lista de Valores - Payment.FraudAnalysis.Status</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.fraudanalysisreasoncode"><a>Lista de Valores - Payment.FraudAnalysis.FraudAnalysisReasonCode</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.addressinfocode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.AddressInfoCode</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.factorcode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.FactorCode</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.internetinfocode"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.InternetInfoCode</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.fraudanalysis.replydata.iproutingmethod"><a>Lista de Valores - Payment.FraudAnalysis.ReplyData.IpRoutingMethod</a></li>
-                  <li class="tocify-item" data-unique="lista-de-valores-payment.chargebacks[n].status"><a>Lista de Valores - Payment.Chargebacks[n].Status</a></li>
-              </ul>
+          
           </ul>
       </div>
                              
