@@ -1949,7 +1949,13 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
       <h1 id="criando-um-pedido">Criando um Pedido</h1>
 <p>A partir desse momentos descreveremos os passos necessários para criação de um pedido na Plataforma B2B da ViaVarejo</p>
 
-
+<aside class="notice">A chamada para este método aciona a criação de um pedido no sistema da Via Varejo. Caso haja perda de comunicação entre o serviço do parceiro e o serviço da Via Varejo, não quer dizer que o pedido não foi criado. 
+  É obrigatório nesses casos que o sistema do parceiro chame o método de consulta de pedido através do ConsultarStatusPedido para validar se esse pedido não foi criado no sistema da Via Varejo. 
+<p> Com o intuito de reforçar essa validação, no caso de nova tentativa de criação do mesmo pedido, o parceiro deve chamar o método com o mesmo identificador de pedido utilizado na tentativa anterior. O sistema da Via Varejo não permite a criação de dois pedidos com o mesmo identificador para uma mesma campanha/contrato.</p></aside>
+<aside class="warning">O método “CriarPedido” deverá receber o parâmetro “Preço Venda”(referente ao preço unitário do produto) para que não haja divergência entre Valor Fechado no site e Valor Real do produto no momento da venda. O mesmo deverá ocorrer com o “ValorFrete”(referente ao valor do frete total da compra).</aside>
+<p> Todo o pedido aguardará ser confirmado pelo método“ConfirmarPedido” para então ser liberado. Por consequência o método “ConfirmarPedido” será sempre consumido, conforme descrito na sequência.</p>
+<p> Caso o pedido não seja confirmado dentro de um minuto será cancelado. É possível, através de parametrização na campanha realizada pelo departamento comercial, que o tempo de confirmação seja alterado.</p>
+     
 <div name="Pedido" data-unique="Pedido"></div>
       <h2 id="Pedido">Pedido</h2>
       <div class="code-fullscreen">
@@ -2069,37 +2075,39 @@ $ curl http://b2b.casasbahiahlg.net/Arquivos/CatalogoB2B/Disponibilidade?idParce
                 <tr>
                   <td><code class="highlighter-rouge">produtos.codigo</code></td>
                   <td>integer</td>
-                  <td></td>
+                  <td>Deverá ser usado o parâmetro Codigo ou Premio. Não é possível usá-los simultaneamente</td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">produtos.quantidade</code></td>
                   <td>integer</td>
-                  <td></td>
+                  <td>Quantidade do produto a ser pedido</td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">produtos.premio</code></td>
                   <td>integer</td>
-                  <td></td>
+                  <td>Deverá ser usado o parâmetro Codigo ou Premio. Não é possível usá-los simultaneamente</td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">produtos.precoVenda</code></td>
                   <td>integer</td>
-                  <td></td>
+                  <td>Valor do preço de venda do produto a ser conferido. Valida o valor e abortará o pedido caso haja diferença.</td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">campanha</code></td>
-                  <td></td>
-                  <td></td>
+                  <td>Int</td>
+                  <td>Código da campanha B2B</td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">cnpj</code></td>
-                  <td></td>
-                  <td></td>
+                  <td>String</td>
+                  <td>CNPJ do parceiro
+                      Formatos aceitos: [99.999.999/9999-99]
+                      </td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">pedidoParceiro</code></td>
-                  <td></td>
-                  <td></td>
+                  <td>Int</td>
+                  <td>Recebe o número do pedido interno do parceiro. Esse código é utilizado para vincular o Id de pedido interno a um Id fornecido pelo cliente.</td>
                 </tr>
                 <tr>
                   <td><code class="highlighter-rouge">idPedidoMktplc</code></td>
